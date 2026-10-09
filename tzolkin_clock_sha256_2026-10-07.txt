@@ -1,0 +1,74 @@
+SHA-256 fingerprint of tzolkin_clock.html (Joshua Harmon)
+
+File:      tzolkin_clock.html
+Size:      415471 bytes
+Modified:  2026-10-07 22:00:33 UTC
+Hashed:    2026-10-07 22:07:32 UTC
+SHA-256:   1d812fb1a3397d685fab4c3933fb7249c2ea2cae2ce73fb57c0ba556e0b9da2d
+
+Any change to the file, even one character, gives a different SHA-256.
+To check later (Windows PowerShell):  Get-FileHash tzolkin_clock.html -Algorithm SHA256
+
+This note alone proves nothing about the date. To fix the date independently,
+put the SHA-256 somewhere dated that you don't control, e.g.
+  - opentimestamps.org (drop the file in; it is hashed in your browser, not uploaded),
+    keep the .ots proof it gives you next to the file;
+  - a commit or a public gist on GitHub containing this text;
+  - an email of this text to yourself.
+
+Checked on the live site (2026-10-07):
+  https://tranquil-sunshine-5a5643.netlify.app/
+  Netlify adds one line at the end of the page it serves (its "Powered by Netlify"
+  badge script, 184 bytes). With that line removed, the served page has exactly the
+  SHA-256 above, so the uploaded file is this file.
+
+New version (2026-10-07, message form on the Sun Stone page, Disqus removed):
+  Size:     416923 bytes
+  SHA-256:  f98c8eca5898a7da0f1aabba942c087aca793b9b518837ee658003cc3d9cc67e
+
+New version (codex key: "Next Venus Evening Star"):
+  Size:     416937 bytes
+  SHA-256:  f9ac4d89c56553290b5e3c68217c48e58cbac533ad555e5b45bb100a6add3ba4
+
+New version (foliated cross page added):
+  Size:     423985 bytes
+  SHA-256:  d0cac15d4ff9754730f66c13b0afda73d15dc50baee7bca0893c1362a2afe0ab
+
+New version (foliated cross drawing darkened and built in):
+  Size:     1172370 bytes
+  SHA-256:  dfc5fd32a3140feb7e874d2e2cafb107edf139deff3df53229b24bb3b6d0d336
+
+New version (foliated cross: David Stuart's drawing with clickable glyph blocks and readings):
+  Size:     1181518 bytes
+  SHA-256:  35c1cadaf0ab79f1eac775ff8c9aad3e422c53c733de38feca3e32d6e3220c4d
+
+New version (temple of the cross tablet with glyph readings; seven gods vase page):
+  Size:     1195998 bytes
+  SHA-256:  aa5e1eaab85ed8ede2d3216b6b1c3be35d132a6fb380ebdf875bdfb2c2f4fd5c
+
+New version (temple of the inscriptions page):
+  Size:     1203507 bytes
+  SHA-256:  11b2b5e95040949bcc0348c7e65bbba97fc022791d826aed13cd5672912b7c39
+
+New version (link to Guenter's translation at top of the Temple of the Inscriptions narrative):
+  Size:     1203762 bytes
+  SHA-256:  afee10b53065dbb7d5e69b988e4123b7966360e85736847231abdc7e102dde2a
+
+New version (regal rabbit vase page):
+  Size:     1209351 bytes
+  SHA-256:  df30f9704e5191670f40701acabacb09fc5f733822e8c440165993921e697c47
+
+New version (bolontiku page: Lords of the Night calculator, B'olon Yokte', Chilam Balam):
+  Size:     1216647 bytes
+  SHA-256:  fb5c828bb1a4218ed50ff1eef2f1c29b98718405e5973da2fa719ea1200c680d
+
+New version (Sun Stone "Numbers" tab: counts of its elements):
+  Size:     1223131 bytes
+  SHA-256:  52ceb762ccca07a1f6746103a58948aee1e4202b633b8a778605282ee00e0ea6
+  (corrected wording, replaces the line above)
+  Size:     1223153 bytes
+  SHA-256:  149f532ac1726b5ebe56fc6854a5cd90d818c7ea74a89df1412ba28391e16f48
+
+New version (Documents links at the end of the menu page; DOCS-START list):
+  Size:     1224370 bytes
+  SHA-256:  f6d468ee0bd6c00bdabac3841cec0de0c14d1c259304b58d8fa7a01ccff4bac5
