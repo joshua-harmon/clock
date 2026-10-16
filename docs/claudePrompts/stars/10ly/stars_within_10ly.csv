@@ -1,0 +1,13 @@
+Catalog Name,RA (h m),Dec (d m),Galactic l,Galactic b,Classification,Visual Mag,Abs Mag,Prllx (mas),Dist (ly),Gliese Number,Proper Name,Proper motion (″/yr),Tangential speed (km/s),Radial velocity (km/s),Notes
+Sun,---,---,--,--,G2V,-26.74,4.83,--,0.00,--,Sol,--,--,--,Has 8 planets
+Alpha Centauri B,14 39.4,-60 52,315.7,-0.7,K1V,1.35,5.86,796.92,4.10,Gl 559 B,Toliman,3.703,22.0,-20.6,
+Proxima Centauri,14 29.6,-62 41,313.9,-1.9,M5.5V,11.13,15.56,768.07,4.25,Gl 551,Proxima,3.859,23.8,-21.9,"Nearest star to the Sun, 0.2 ly from Alpha Centauri A and B. Has 2 planets"
+Alpha Centauri A,14 39.4,-60 52,315.7,-0.7,G2V,-0.01,4.38,754.81,4.30,Gl 559 A,Rigil Kentaurus,3.710,23.3,-21.4,
+Barnard’s Star,17 57.8,+04 44,31.0,+14.1,M4V,9.54,13.23,546.98,5.96,Gl 699,,10.393,90.1,-110.5,"Fastest proper motion of any star, 10.4″ a year: the width of the full Moon in 180 years. Has 4 planets"
+Wolf 359,10 56.4,+07 00,244.1,+56.1,M6V,13.51,16.60,415.18,7.86,Gl 406,,4.715,53.8,+19.5,Flare star
+Lalande 21185,11 03.3,+35 57,185.2,+65.4,M2V,7.52,10.49,392.75,8.30,Gl 411,,4.812,58.1,-85.1,Brightest red dwarf in the northern sky (still too faint for the naked eye). Has 2 planets
+Alpha Canis Majoris A,06 45.1,-16 42,227.2,-8.9,A1V,-1.44,1.45,379.21,8.60,Gl 244 A,Sirius,1.339,16.7,-5.5,
+Alpha Canis Majoris B,06 45.1,-16 43,227.2,-8.9,DA2,8.44,11.33,379.21,8.60,Gl 244 B,Sirius B,1.339,16.7,-5.5,White dwarf companion of Sirius
+Luyten 726-8 B,01 39.1,-17 57,175.5,-75.7,M6V,12.99,15.85,373.84,8.72,Gl 65 B,UV Ceti,3.232,41.0,+32.0,"UV Ceti, the prototype flare star"
+Luyten 726-8 A,01 39.1,-17 57,175.5,-75.7,M5.5V,12.54,15.37,367.71,8.87,Gl 65 A,BL Ceti,3.429,44.2,+29.0,
+Ross 154,18 49.8,-23 50,11.3,-10.3,M3.5V,10.43,13.06,336.03,9.71,Gl 729,,0.668,9.4,-11.1,

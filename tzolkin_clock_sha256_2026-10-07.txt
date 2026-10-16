@@ -72,3 +72,35 @@ New version (Sun Stone "Numbers" tab: counts of its elements):
 New version (Documents links at the end of the menu page; DOCS-START list):
   Size:     1224370 bytes
   SHA-256:  f6d468ee0bd6c00bdabac3841cec0de0c14d1c259304b58d8fa7a01ccff4bac5
+
+New version (global temperature bar above the menu hint, ERA5 via Climate Reanalyzer):
+  Size:     1227351 bytes
+  SHA-256:  ab61e4cde46a007172620f662292ff3a5cb8e015d7d32fd87ee7b9b7315ef545
+
+New version (precipitation bar under the temperature bar; menu hint moved right of the text field):
+  Size:     1229514 bytes
+  SHA-256:  c11dfb4815deca982bb4a8c8461a9836851a6660fd04d2c1a230d319a7f3e4d6
+
+New version (documents list updated by DocsLinker, 2026-10-11 13:38):
+  Size:     1229662 bytes
+  SHA-256:  6750b2a5f35ae23b7b5264084048ca881386e6d7be88af7c2e27524f7f60f0a3
+
+New version (documents list updated by DocsLinker, 2026-10-11 17:42):
+  Size:     1229786 bytes
+  SHA-256:  2bbb8d9920ba2e452e104effbb29681aa7a68ba96cb040669441bb04e47b009f
+
+New version (documents list updated by DocsLinker, 2026-10-11 19:45):
+  Size:     1229894 bytes
+  SHA-256:  fa1fca694e828d70e0c0f4ad17f0646abd732d91ee065b1365546db3d6b3057d
+
+New version (documents list updated by DocsLinker, 2026-10-11 21:28):
+  Size:     1229992 bytes
+  SHA-256:  a54f4f3f73783f013e4cdf65e84e52ef1060bd2c303a0212e01ba8083c780532
+
+New version (documents list updated by DocsLinker, 2026-10-11 21:34):
+  Size:     1229992 bytes
+  SHA-256:  c0451db29cb6865f1044a6c276d209b7939995e3a8b9a067f3944a240ea70918
+
+New version (documents list updated by DocsLinker, 2026-10-11 21:37):
+  Size:     1230050 bytes
+  SHA-256:  0d2271e6d15e6443dd1494c0cf98165d8c4aedc094b0944c481fba51ec6534c2

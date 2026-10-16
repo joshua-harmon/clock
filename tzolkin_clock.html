@@ -18,7 +18,7 @@
 <ul id="fcpas" style="padding:0;margin:0 0 10px"></ul>
 <p id="fcsrc" style="margin:0 0 12px;color:#777;font-size:12px"></p></div>
 <div id="fcnotes"></div>
-</div><div id="azbox" style="position:fixed;display:none;z-index:1;overflow:hidden"><img id="azimg" alt="The Aztec Sun Stone" style="display:block;transform-origin:50% 50%;transition:transform .08s"></div><div id="hint" style="position:fixed;left:12px;bottom:40px;font:14px sans-serif;color:#555;z-index:3">type 'menu' for menu</div><input id="i" placeholder="" autocomplete="off">
+</div><div id="azbox" style="position:fixed;display:none;z-index:1;overflow:hidden"><img id="azimg" alt="The Aztec Sun Stone" style="display:block;transform-origin:50% 50%;transition:transform .08s"></div><div id="clim" style="position:fixed;left:12px;bottom:40px;font:13px Arial,sans-serif;color:#444;z-index:1;display:none"></div><div id="hint" style="position:fixed;left:345px;bottom:12px;font:14px sans-serif;color:#555;z-index:3">type 'menu' for menu</div><input id="i" placeholder="" autocomplete="off">
 <script>
 // Tzolkin Clock (light JS version of WordRecognizer.java, "tzolkin a" view).
 // Algorithm : SHA256
@@ -37,11 +37,62 @@ A.haab.forEach((s,i)=>load('h'+i,s));
 // DOCS-START
 const DOCS=[
  ['819-day station verification','docs/819-day-station-verification.md'],
+ ['Bolontiku Slideshow','docs/Bolontiku Slideshow.html'],
  ['Jupiter and Saturn declination steps','docs/jupiter_saturn_declination_steps.png'],
  ['Maya Glyph Research - Jupiter and Saturn','docs/Maya Glyph Research - Jupiter and Saturn.docx'],
+ ['Planet Nine and the Mass of the Solar System','docs/Planet Nine and the Mass of the Solar System.docx'],
  ['Reference Points for Planetary Periods','docs/Reference Points for Planetary Periods.docx'],
+ ['Sirius - Proper Motion, Companion and Calendar Cycle','docs/Sirius - Proper Motion, Companion and Calendar Cycle.docx'],
+ ['Stars within 10 Light Years','docs/Stars within 10 Light Years.docx'],
+ ['Stars within 50 Light Years','docs/Stars within 50 Light Years.docx'],
+ ['The Bolontiku Catalogue - Scales 3 to 9','docs/The Bolontiku Catalogue - Scales 3 to 9.docx'],
 ];
 // DOCS-END
+// ---------- global average temperature bar (user), above the menu hint on the main view ----------
+// Daily world-average 2 m air temperature from ERA5 (Copernicus C3S), via Climate Reanalyzer, University of Maine.
+// The bar runs from the lowest to the highest daily value in the record (1940 to now); the dot is the latest day,
+// the thin gray tick is the 1991-2020 average for that date. Needs internet; hidden when the data cannot be read.
+const CLIM_URL='https://climatereanalyzer.org/clim/t2_daily/json/era5_world_t2_day.json';
+let CLIM=null;
+async function climLoad(){let j=null;
+ try{const c=JSON.parse(localStorage.getItem('climT2')||'null');if(c&&Date.now()-c.t<6*3600e3)j=c.j}catch(e){}
+ if(!j){try{const r=await fetch(CLIM_URL);if(!r.ok)return;const a=await r.json();
+  const yrs=a.filter(s=>/^\d{4}$/.test(s.name)),all=yrs.flatMap(s=>s.data.filter(v=>v!=null)),last=[...yrs].reverse().find(s=>s.data.some(v=>v!=null));if(!last)return;
+  let i=-1;last.data.forEach((v,k)=>{if(v!=null)i=k});if(i<0)return;
+  const nm=a.find(s=>s.name=='1991-2020');
+  j={min:Math.min(...all),max:Math.max(...all),year:+last.name,i,v:last.data[i],n:nm?nm.data[i]:null,y0:yrs[0].name};
+  try{localStorage.setItem('climT2',JSON.stringify({t:Date.now(),j}))}catch(e){}}catch(e){return}}
+ CLIM=j;climBar()}
+// Daily world-average precipitation (user): no free daily global series can be read by a web page, so it is estimated
+// from Open-Meteo's weather models (CC BY 4.0, open-meteo.com) at 450 points on a 12-degree grid, weighted by the cosine
+// of latitude, for the last full day (UTC). A sample this coarse is good to about ±0.3 mm. The bar runs 2.0 to 4.0 mm per
+// day around the long-term world average of about 2.7 mm (GPCP). One request per browser per day.
+let PRCP=null;
+async function prcpLoad(){const key=new Date().toISOString().slice(0,10);let j=null;
+ try{const c=JSON.parse(localStorage.getItem('climPr')||'null');if(c&&c.key==key)j=c.j}catch(e){}
+ if(!j){const la=[],lo=[];for(let a=-84;a<=84;a+=12)for(let b=-174;b<=174;b+=12){la.push(a);lo.push(b)}
+  try{const r=await fetch('https://api.open-meteo.com/v1/forecast?latitude='+la.join(',')+'&longitude='+lo.join(',')+'&daily=precipitation_sum&past_days=1&forecast_days=1&timezone=GMT');
+   if(!r.ok)return;const a=await r.json();if(!Array.isArray(a)||!a.length)return;let P=0,W=0,n=0;
+   a.forEach((s,k)=>{const v=s.daily&&s.daily.precipitation_sum[0];if(v==null)return;const w=Math.cos(la[k]*Math.PI/180);P+=w*v;W+=w;n++});
+   if(!W)return;j={v:P/W,day:a[0].daily.time[0],n};try{localStorage.setItem('climPr',JSON.stringify({key,j}))}catch(e){}}catch(e){return}}
+ PRCP=j;climBar()}
+function climRow(label,lo,hi,frac,grad,tick,val,tip){const W=200,X=f=>Math.round(Math.max(0,Math.min(1,f))*W);
+ return '<div style="display:flex;align-items:center;gap:7px;white-space:nowrap;height:20px" title="'+tip+'"><span style="color:#6f9a78;font-weight:bold;width:132px">'+label+'</span><span style="width:44px;text-align:right">'+lo+'</span>'+
+  '<span style="position:relative;display:inline-block;width:'+W+'px;height:8px;border-radius:4px;background:'+grad+'">'+
+  (tick!=null?'<span style="position:absolute;left:'+(X(tick)-1)+'px;top:-3px;width:2px;height:14px;background:#777"></span>':'')+
+  '<span style="position:absolute;left:'+(X(frac)-6)+'px;top:-3px;width:10px;height:10px;border-radius:50%;background:#222;border:2px solid #fff"></span></span>'+
+  '<span style="width:50px">'+hi+'</span><span>'+val+'</span></div>'}
+function climBar(){const el=document.getElementById('clim');if(!el)return;if((!CLIM&&!PRCP)||VIEW!='main'){el.style.display='none';return}
+ let h='';const md=d=>d.toLocaleDateString('en-US',{month:'short',day:'numeric',timeZone:'UTC'});
+ if(CLIM){const c=CLIM,d=md(new Date(Date.UTC(c.year,0,1+c.i))),f=v=>v.toFixed(1)+' °C',an=c.n!=null?c.v-c.n:null,F=v=>(v-c.min)/(c.max-c.min);
+  h+=climRow('Global temperature',f(c.min),f(c.max),F(c.v),'linear-gradient(90deg,#4a7fd0,#e6e0b8,#d0503a)',c.n!=null?F(c.n):null,
+   '<b>'+f(c.v)+'</b> '+d+(an!=null?', '+(an>=0?'+':'−')+Math.abs(an).toFixed(1)+'° vs normal':''),
+   'World-average air temperature 2 m above the surface, ERA5 (Copernicus C3S) via Climate Reanalyzer. Bar: lowest and highest daily values since '+c.y0+'; dot: '+d+', '+c.year+'; gray tick: 1991–2020 average for that date.')}
+ if(PRCP){const p=PRCP,d=md(new Date(p.day+'T00:00:00Z'));
+  h+=climRow('Global precipitation','2.0 mm','4.0 mm',(p.v-2)/2,'linear-gradient(90deg,#e9dcb8,#9cc3e0,#2f6db8)',(2.7-2)/2,
+   '<b>'+p.v.toFixed(1)+' mm</b> '+d+' (estimate)',
+   'World-average precipitation for '+d+' (UTC), estimated from Open-Meteo weather models (CC BY 4.0) at '+p.n+' points on a 12° grid; good to about ±0.3 mm. Bar: 2.0 to 4.0 mm per day; gray tick: long-term world average, about 2.7 mm per day (GPCP).')}
+ el.innerHTML=h;const k=Math.min(innerWidth/1535,innerHeight/761,1);el.style.transformOrigin='0 100%';el.style.transform='scale('+k+')';el.style.display='block'}
 // ---------- time ----------
 let OFF=0,mv={};                                   // OFF = preview offset in days
 try{mv=JSON.parse(localStorage.tzMoves||'{}')}catch(e){}
@@ -1052,7 +1103,7 @@ function renderBolon(){const T=jdnOf(now()),P=[['today',T],['New Fire 2027',NEWF
  '<p style="max-width:1150px;line-height:1.5">The Books of Chilam Balam are Yucatec Maya books of the colonial period, written in Latin letters from older tradition. In the Book of Chilam Balam of Chumayel, in a k’atun 11 Ajaw, the Oxlahun ti Ku, the Thirteen Gods of the sky, are seized and humbled by the Bolon ti Ku, the Nine Gods of the underworld, and their insignia are taken. The sky falls and a flood ends that world. The Bakabs then set up the four colored trees at the corners of the world, red in the east, white in the north, black in the west, yellow in the south, and a great green tree in the center, and the world is made anew.</p>'+
  '<p class="nt">The two numbers are the two great counts of the calendar: 13 the sky levels and the Tzolkin numbers, 9 the underworld levels and the lords of the night. 13 × 9 = 117; with 7, 13 × 9 × 7 = 819, the station count of this clock.</p>'+
  '<p class="nt">Translations: Ralph L. Roys, <i>The Book of Chilam Balam of Chumayel</i> (1933); Mercedes de la Garza, <i>Libro de Chilam Balam de Chumayel</i> (1985); David Bolles and others. The passage is summarized here, not quoted. Classic readings: M. Grofe, <a href="https://www.wayeb.org/notes/wayeb_notes0030.pdf" target="_blank" rel="noopener">“The Name of God L: B’olon Yokte’ K’uh?”</a> (Wayeb Notes 30, 2009); D. Stuart on Tortuguero Monument 6; <a href="https://en.wikipedia.org/wiki/Lords_of_the_Night" target="_blank" rel="noopener">Lords of the Night</a>.</p>'}
-function draw(){if(pending)return;const W=innerWidth,H=innerHeight,dpr=devicePixelRatio||1,k=Math.min(W/1535,H/761);
+function draw(){if(pending)return;climBar();const W=innerWidth,H=innerHeight,dpr=devicePixelRatio||1,k=Math.min(W/1535,H/761);
  cv.width=W*dpr;cv.height=H*dpr;cv.style.width=W+'px';cv.style.height=H+'px';
  g.setTransform(dpr*k,0,0,dpr*k,0,0);g.fillStyle='#fff';g.fillRect(0,0,W/k,H/k);
  const TXV=['text','menu','key','seven','rabbit','bolon'].includes(VIEW);document.getElementById('tx').style.display=TXV?'block':'none';azImg();fcImg();const t=now();if(TXV)return;if(VIEW=='fcross'){drawFC();return}if(VIEW=='nf'){drawNF();return}if(VIEW=='aztec'){drawAztec();return}if(VIEW=='magic'){drawMagic();return}if(VIEW=='819'){draw819(t);return}if(VIEW=='dates'){drawDates(t);return}if(VIEW=='codex'){drawCodex(t);return}g.save();g.translate(0,24);drawClock(t);g.restore();drawBoard(t);if(!yahOff){g.save();g.font='15px sans-serif';g.textAlign='left';g.textBaseline='middle';g.fillStyle='#000';const Q=.8,qw=CW*Q,qh=RH*Q,tw=g.measureText('you are here').width,gap=10,tot=tw+gap+qw,x0=1356+(154-tot)/2,yc=BY+BOARD_DROP+3.5*RH;g.fillText('you are here',x0,yc);const sx=x0+tw+gap,sy=yc-qh/2;g.strokeStyle='#000';g.lineWidth=1;g.strokeRect(sx,sy,qw,qh);g.strokeStyle=KINSQ;g.lineWidth=2.5*Q;g.strokeRect(sx+2*Q,sy+2*Q,qw-4*Q,qh-4*Q);g.font='13px sans-serif';g.fillStyle='#555';const cw=g.measureText('click me').width;g.fillText('click me',x0+(tw-cw)/2,yc+18);yahBox=[x0-4,sy-4,sx+qw+4,yc+27];g.restore()}else{const Jt=jdnOf(t),w=dateGlyphs(Jt,0,0,false),yc=BY+BOARD_DROP+3.5*RH,gy=yc-31;dateGlyphs(Jt,1433-w/2,gy);g.save();g.font='14px sans-serif';g.textAlign='center';g.textBaseline='middle';g.fillStyle='#000';g.fillText(new Date((Jt-2440588)*864e5).toLocaleDateString('en-US',{timeZone:'UTC',month:'short',day:'numeric',year:'numeric'}),1433,gy+26.5+4+8);g.fillText(tzs(Jt),1433,gy+26.5+4+8+17);g.restore()}
@@ -1170,4 +1221,5 @@ if(/^#(regal-rabbit|rabbit)$/i.test(location.hash)){RBOF='main';VIEW='rabbit';co
 if(/^#(seven-gods|seven)$/i.test(location.hash)){SVOF='main';VIEW='seven';const h=document.getElementById('hint');if(h)h.remove();renderSeven();draw()}
 if(/^#(foliated|foliated-cross|fcross|cross|temple-of-the-cross|inscriptions|pakal)$/i.test(location.hash)){FCOF='main';VIEW='fcross';FCT=/^#(cross|temple-of-the-cross)$/i.test(location.hash)?'cross':/^#(inscriptions|pakal)$/i.test(location.hash)?'inscriptions':'fcross';const h=document.getElementById('hint');if(h)h.remove();draw()}
 if(/^#(aztec|sunstone|sun-stone)$/i.test(location.hash)){SKOF='main';VIEW='aztec';const h=document.getElementById('hint');if(h)h.remove();draw()} // direct link to the Sun Stone page (user)
+climLoad();prcpLoad();
 </script>

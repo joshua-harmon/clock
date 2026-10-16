@@ -1,0 +1,19 @@
+So they calculated a 9th planet by looking at Kuiper belt orbits ?
+
+Yes, but not quite in the classic way. Neptune was found in 1846 by working backwards from small tugs on Uranus’s orbit. Planet Nine is inferred from a pattern in the orbits of the most distant Kuiper belt objects, the ones that never come near Neptune.
+
+How the idea developed
+
+2014, Trujillo and Sheppard: after finding 2012 VP113, a body even more remote than Sedna, they noticed that the most distant objects had a suspicious alignment. All of them reach closest approach to the Sun near where they cross the plane of the planets, coming upward through it.
+2016, Batygin and Brown at Caltech: they found a stronger effect in about six objects that swing far beyond 250 AU but never come closer than about 30 AU, so Neptune can’t steer them. Their elongated orbits point the same way in space, and their orbits are also tilted the same way. The chance of that happening randomly was estimated at roughly 1 in 10,000 to 1 in 15,000. Without some force holding the orbits together, the planets’ pull would smear them out within a few hundred million years.
+Computer simulations showed that a distant, massive planet on a tilted, elongated orbit pointing the opposite way would herd these objects into exactly this alignment and keep them there. The planet would be about 5–10 Earth masses, at an average of about 400–800 AU from the Sun, on an orbit tilted about 15–20°.
+A prediction that came true: the same model predicted a second population of objects orbiting nearly perpendicular to the planets, and several were later found. That’s the strongest point in its favour.
+Why it’s still debated
+
+Few objects: the pattern rests on only about a dozen well-measured bodies.
+Survey bias: each telescope survey only looks at certain parts of the sky at certain times of year. Some astronomers, including the OSSOS survey team, argue that this alone could make orbits look clustered.
+Other explanations: the combined gravity of a massive disk of small icy bodies could produce the alignment. A more exotic idea is a planet-mass object that isn’t a normal planet, such as a tiny primordial black hole.
+No sighting yet: at 400+ AU a planet of that size would be very faint, around magnitude 22. The Vera Rubin Observatory survey now under way should either spot it or rule out most of the places it could be.
+So it’s a calculated prediction, like Neptune’s, but based on the shapes of distant orbits rather than on a measured tug on a known planet.
+
+
