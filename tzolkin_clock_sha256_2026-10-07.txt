@@ -526,3 +526,13 @@ tzolkin_clock.html (menu: tier tabs stay up inside every folder of an Underworld
 Size: 1,527,305 bytes
 SHA-256: 040ea7d8f00296d77f46cdc67bf7532e7f66cd1e7ed2e3ed38c0ef2cf0fee87e
 Hashed UTC: 2026-10-17 21:15:59
+
+tzolkin_clock.html (u1 tzolkin: Moon-planet labels follow their conjunctions; small today square; New Fire mark a dotted square)
+Size: 1,528,532 bytes
+SHA-256: 50a3c58937ee2ccd9d70a86f8d3a22bdf19f65482e9cfb86e7d46863bb81e26f
+Hashed UTC: 2026-10-17 21:54:57
+
+tzolkin_clock.html (copyright and CC BY-NC-ND 4.0 line at the lower right)
+Size: 1,528,992 bytes
+SHA-256: fa45a4907239393159381bf85626256cd6fe3da5cc4f245a478c075ef293e4af
+Hashed UTC: 2026-10-17 22:22:45
