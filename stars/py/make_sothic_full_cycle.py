@@ -2,7 +2,7 @@
 Simple geometric model: Sirius fixed at its J2000 ecliptic latitude (-39.61 deg), its longitude carried round by precession
 (50.29"/yr; one turn in about 25,800 years); circular solar orbit; obliquity 23.44 deg; Sirius first seen when it is 0.5 deg up
 and the Sun 9 deg below the horizon at Memphis (29.85 N). Sirius's own motion, refraction details and changes in the Earth's orbit
-are left out. Writes images/U4/strsWithin50ly/sirius_sothic_full_precession_cycle.png"""
+are left out. Writes time/u4/u4_docs/strsWithin50ly/sirius_sothic_full_precession_cycle.png"""
 import math, os
 import numpy as np
 import matplotlib; matplotlib.use('Agg')
@@ -74,5 +74,5 @@ fig.text(0.5, 0.955, 'Sirius’s rising year over a whole precession cycle: the 
 fig.text(0.01, 0.005, 'Simple geometric model: Sirius’s latitude from the ecliptic held fixed and its longitude carried round by precession (50.29″ a year); circular solar orbit; obliquity 23.44°; '
          'Sirius first seen 0.5° up with the Sun 9° down at Memphis (29.85° N).\nIt leaves out Sirius’s own motion (about 9° over the cycle), the slow changes in the Earth’s orbit and tilt, and refraction details, so it differs from the detailed '
          '5000 BC – AD 3000 chart by up to about 0.001 day; the far ends are less certain.', color='#9aa', fontsize=9.5)
-out = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'images', 'U4', 'strsWithin50ly', 'sirius_sothic_full_precession_cycle.png')
+out = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'time', 'u4', 'u4_docs', 'strsWithin50ly', 'sirius_sothic_full_precession_cycle.png')
 fig.savefig(out, facecolor=BG, bbox_inches='tight'); print('saved')

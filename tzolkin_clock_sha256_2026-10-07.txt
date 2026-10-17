@@ -104,3 +104,425 @@ New version (documents list updated by DocsLinker, 2026-10-11 21:34):
 New version (documents list updated by DocsLinker, 2026-10-11 21:37):
   Size:     1230050 bytes
   SHA-256:  0d2271e6d15e6443dd1494c0cf98165d8c4aedc094b0944c481fba51ec6534c2
+
+New version (2026-10-16: Underworld menu, slideshows, data graphs with spectra, documents and
+  links pages; "Age of the Ram, 2200 BC" entry; six document paths corrected;
+  working copy merged into the site folder):
+  Size:     1437739 bytes
+  SHA-256:  084328aa037e5135e408741a029df4515326f26470cef264c6ddcfb1de699f31
+  Hashed:   2026-10-16 23:01:29 UTC
+
+New version (2026-10-17: U4 "Egypt" pictures (15) and U5 "Mesopotamia" pictures (3), Wikimedia Commons, with credits):
+  Size:     1447987 bytes
+  SHA-256:  31e0104f38d0ce91a71545c1c26a0718338a548a4db3307149366605c7d724ed
+  Hashed:   2026-10-17 01:10:35 UTC
+
+New version (2026-10-17: mammoth habitat (U5), Gilgamesh statue (U4 timeline, U5 Mesopotamia), V Bar V petroglyphs (U4), human timeline (U6), Pangaea and geological timeline (U8)):
+  Size:     1452954 bytes
+  SHA-256:  5caa8660a82969c941060cb1556c1c31c8ea5547c9ef6da670cf2acb05736d64
+  Hashed:   2026-10-17 02:24:32 UTC
+
+New version (2026-10-17: Pangaea map in U8 swapped to the English-label version):
+  Size:     1452883 bytes
+  SHA-256:  4839e5daecf8a78615c0bee2fea5fb2988e03f2e0a082d26329eee1eb67fe94e
+  Hashed:   2026-10-17 02:25:39 UTC
+
+New version (2026-10-17: Underworld menus in three tiers, one shown at a time in the left menu (data sets | apps & documents | timeline); timelines dated and in order; Egypt in U4, Mesopotamia in U5; menu files moved into time/uN/uN_data, uN_docs, uN_time; tables, charts and spreadsheets made for the project listed as data):
+  Size:     1467135 bytes
+  SHA-256:  0e16f0537ca9741996f3c742df92b4b5576fc35d7af2bbcc181695561cdbedd1
+  Hashed:   2026-10-17 02:57:19 UTC
+
+New version (2026-10-17: Temple of the Foliated Cross, c. 690, in the U4 timeline, with the Maudslay drawing saved as time/u4/u4_time/foliated_cross_maudslay.png):
+  Size:     1468784 bytes
+  SHA-256:  5807f8fc50bd5c3d282f03d5646cd368f26755d9dfe4681aeea069d21e553c9b
+  Hashed:   2026-10-17 03:37:31 UTC
+
+New version (2026-10-17: U4 "Glyph data (to be deciphered)" in the data sets, in date order: Kom Ombos plates, Foliated Cross, Stela C, V Bar V petroglyphs, Aztec calendar stone, Egyptian stele):
+  Size:     1467241 bytes
+  SHA-256:  274846a54ddc9da682910545b54edfd397219259ed05ba9e36f734433a5b18d2
+  Hashed:   2026-10-17 03:44:42 UTC
+
+New version (2026-10-17: U5 "Glyph data (to be deciphered)": the Adda seal (Enki) and the Ur-Nammu seal impression):
+  Size:     1467205 bytes
+  SHA-256:  b1121c6d94ddf0ded83a4d21f3d6ec3af2996036fd4d416e069a2263d213f076
+  Hashed:   2026-10-17 03:45:27 UTC
+
+New version (2026-10-17: star charts and star data moved to the centre tier (Apps & documents) in U4-U7; their files to time/uN/uN_docs):
+  Size:     1467205 bytes
+  SHA-256:  79208e35b170a344bb193b84d35bc6871194ba8a6d4340022ab7f5a45a7a5d4e
+  Hashed:   2026-10-17 03:46:41 UTC
+
+New version (2026-10-17: menu arrow pad fixed 30 px above the text field; help line under it removed):
+  Size:     1466983 bytes
+  SHA-256:  f8a3e11877a14672934e1c9d3fe79ad67d5e26189ec52765d941633bdf5ca9c1
+  Hashed:   2026-10-17 04:14:40 UTC
+
+New version (2026-10-17: easier-to-read text in the menu preview pane: larger serif type, colors, framed text and credits):
+  Size:     1467945 bytes
+  SHA-256:  f044ed42c3355c4b747a219cd7f56fa7361ddc5623452920e5660e39842d6477
+  Hashed:   2026-10-17 04:16:08 UTC
+
+New version (2026-10-17: "thumbnails" command: small pictures beside every menu entry, toggled on and off):
+  Size:     1469423 bytes
+  SHA-256:  cdb458649d2747bfa3ed0b6d4e149a564826d73d164d4aae57b2346353d68f23
+  Hashed:   2026-10-17 04:23:34 UTC
+
+New version (2026-10-17: "thumbnails" also turns on pictures beside the links on links/index.html and links/wikiLinks.html):
+  Size:     1469536 bytes
+  SHA-256:  e70aed7c939e6a3c06cca086c06bb00620a48d07360f52eba03eec99375ec7d5
+  Hashed:   2026-10-17 04:35:28 UTC
+
+New version (2026-10-17: data workbench: graph, process and save data files from the computer, offline; "graph it" can read a chosen file offline):
+  Size:     1481080 bytes
+  SHA-256:  1dce56cf5a8f3aa6802ec5f69bbfb38eb1ac4ac970c8160a0bb35b406319b296
+  Hashed:   2026-10-17 04:45:42 UTC
+
+New version (2026-10-17: links pages opened from the clock carry the thumbnails setting; an open links page follows when "thumbnails" is typed):
+  Size:     1481753 bytes
+  SHA-256:  d2c85b615f045ddd2f5c66c5f845e307a2447c84ff7feb4af0ffdb99aac6461e
+  Hashed:   2026-10-17 04:53:44 UTC
+
+New version (2026-10-17: graph button (3d.GIF) left of the menu arrows, flush with the menu: graphs the selected data set or opens the data workbench):
+  Size:     1482420 bytes
+  SHA-256:  d30546637722c0e5e9b964a04a0e1a2d24efacaafc2a478a324428b5a8787ab8
+  Hashed:   2026-10-17 05:06:31 UTC
+
+New version (2026-10-17: menu list uses all the room above the buttons, scrolls only when it does not fit):
+  Size:     1482481 bytes
+  SHA-256:  7e3e1c858fcbda295ab432edad51a717db4d296ec8e9a1bff8956b6bce5f0d31
+  Hashed:   2026-10-17 05:10:07 UTC
+
+New version (2026-10-17: "menu" and "links" buttons beside the text field replace the hint text):
+  Size:     1483080 bytes
+  SHA-256:  564b1076f52600ec7e1c6834d849934355e78d3140f8437787cf1a5b925e0979
+  Hashed:   2026-10-17 13:38:09 UTC
+
+New version (2026-10-17: uncited pictures and picture-less timeline entries taken off the menu (kept in materials/); charts made for the project cited):
+  Size:     1486840 bytes
+  SHA-256:  ae4760dfdce436a95da5fd963a64a7bbfa0fdd4bcc99c72b000e8c3e5ab06f8b
+  Hashed:   2026-10-17 13:54:59 UTC
+
+New version (2026-10-17: 26 timeline events restored, each with a cited Wikimedia Commons picture):
+  Size:     1507596 bytes
+  SHA-256:  a2a84beabb033494a91fa9d85e1479980d373a9deacf60b77a7e07c578f9c236
+  Hashed:   2026-10-17 14:01:32 UTC
+
+New version (2026-10-17: "docs", "data" and "commands" buttons beside the text field):
+  Size:     1508181 bytes
+  SHA-256:  28295e656d003f0501d384280c4762687ffa6938f4e955fb3bbe541f62916e8d
+  Hashed:   2026-10-17 14:39:26 UTC
+
+New version (2026-10-17: "u2 tzolkin" board turned on its side: 13 rows of 20 days, day glyphs across the top, Haab glyphs down the left, inner-planet symbols):
+  Size:     1510880 bytes
+  SHA-256:  466657a5f9c03c8cdecc2a03b49d9ccf6b4a50821a32a4d2826707ae0a4ecc95
+  Hashed:   2026-10-17 14:55:01 UTC
+
+New version (2026-10-17: u2 tzolkin: square day boxes across the full width; "you are here" under the board):
+  Size:     1511089 bytes
+  SHA-256:  cffd00cb585235969d044d93c840ebaa0d587897b88e869a6c0e6f44de70029e
+  Hashed:   2026-10-17 15:12:14 UTC
+
+New version (2026-10-17: u2 tzolkin: clock box shows only constellations, the Big Dipper pair and planets, four-fifths size, flush left; Tzolkin box moved left):
+  Size:     1513209 bytes
+  SHA-256:  d11bb47ee6d0add7d11fabc78ef909b49a8a769e3ead9ba4ba0f13a558b39e54
+  Hashed:   2026-10-17 15:22:15 UTC
+
+New version (2026-10-17: u2 clock: inner and outer circles (declination -28 to +28 deg), planets placed by declination, 364 notches):
+  Size:     1514022 bytes
+  SHA-256:  a8e2b03a0300fa96f6e8c1b9774734ff3a67d30b6298ecb5c64d61a22e86881e
+  Hashed:   2026-10-17 15:30:50 UTC
+
+New version (2026-10-17: u2 clock: Venus yellow, Mercury brown):
+  Size:     1514022 bytes
+  SHA-256:  1e364818b120be215ecf46e3b908af19fa12c3ef3cdca046e48dcdd3c1911402
+  Hashed:   2026-10-17 15:33:57 UTC
+
+New version (2026-10-17: u2 tzolkin table the same size as the u1 table, turned on its side):
+  Size:     1514118 bytes
+  SHA-256:  8d87eadfb1b19c8bcf16a0592748ac907a7c8e158c2eac622a15ca703c0fbe0d
+  Hashed:   2026-10-17 15:37:25 UTC
+
+New version (2026-10-17: u2 tzolkin: no climate bars, box to the right end, "you are here" right of the table):
+  Size:     1514306 bytes
+  SHA-256:  d52cae3561e1c82dd96341d4e4a874aa7430ef7aea101459d9e32f2763a241d4
+  Hashed:   2026-10-17 15:42:27 UTC
+
+New version (2026-10-17: u2 tzolkin board one fifth larger, symbols unchanged):
+  Size:     1514475 bytes
+  SHA-256:  7b610aabc807620b0b9ba111c53e5c6ce3b070615d4a60772208a52edc167872
+  Hashed:   2026-10-17 15:46:07 UTC
+
+New version (2026-10-17: u2 tzolkin: larger Haab glyphs, bars and dots upright to their left):
+  Size:     1514604 bytes
+  SHA-256:  1132097ac9166e92848ac13942c80dca319c0bd061e9e5deafa12cc60c82e176
+  Hashed:   2026-10-17 15:55:04 UTC
+
+New version (2026-10-17: u2 tzolkin: Haab glyphs all the same width; bars and dots aligned):
+  Size:     1514875 bytes
+  SHA-256:  3757220a985cc8992089bd64e2d476a0d3092c8215955fb9d0c91c1e8a8e14a5
+  Hashed:   2026-10-17 15:58:43 UTC
+
+New version (2026-10-17: u2 tzolkin: Haab glyphs larger, halfway to the row lines):
+  Size:     1515014 bytes
+  SHA-256:  093beeb9bfea4c5e6c069b5e6a700378b94f6ddef06690ee14605f6292033864
+  Hashed:   2026-10-17 16:02:11 UTC
+
+New version (2026-10-17: u2 tzolkin: Haab glyphs slightly darker):
+  Size:     1515156 bytes
+  SHA-256:  7a9ba2addfe45a90a309d2dc94873943f0606b2fdc0be8805252573495a7fe2c
+  Hashed:   2026-10-17 16:04:00 UTC
+
+New version (2026-10-17: u2 tzolkin: "you are here" below the left box, with a key of the symbols):
+  Size:     1516229 bytes
+  SHA-256:  7cda5e5bd61152879fd6e7397c609f8100ec08927c5df023ea6654b2650fd98e
+  Hashed:   2026-10-17 16:15:12 UTC
+
+New version (2026-10-17: u2 tzolkin key: "You are here" first, with date glyphs and the date spelled out; button removed):
+  Size:     1516814 bytes
+  SHA-256:  f0429f694de49786a901732765df9c253e0acea47e5988ae48ef7d86f486c6bf
+  Hashed:   2026-10-17 16:22:17 UTC
+
+New version (2026-10-17: u2 tzolkin: key under the board with Haab, Tzolkin, Gregorian and glyphs; Moon-Mars removed):
+  Size:     1516940 bytes
+  SHA-256:  e90472b434fa9c156d52c6475ce2b07c4531e7a0c67a72a051da5c6098ed6bad
+  Hashed:   2026-10-17 16:31:37 UTC
+
+New version (2026-10-17: u2 tzolkin: key with Gregorian dates and glyphs; "you are here / click me" beside the buttons):
+  Size:     1518125 bytes
+  SHA-256:  53d19fd0cbd42300520e7155bf0fcb81c9ed98dfd9c07e6536825eeb098791a6
+  Hashed:   2026-10-17 16:44:15 UTC
+
+tzolkin_clock.html (u2 tzolkin: key in two columns, glyphs then mm/dd/yy date; Mars retrograde / Mars forward; "You are here" beside the day glyphs)
+Size: 1,518,600 bytes
+SHA-256: 121daebdd4bdebc154e3b0ed4ad2ef38807641f7397dc8bf8615facf51841b34
+Hashed UTC: 2026-10-17 16:55:28
+
+tzolkin_clock.html (u2 tzolkin: key glyphs 20% larger)
+Size: 1,518,685 bytes
+SHA-256: 4017214577f5b08c7ab8c390bdc7ae22bf7cdbdc06ca7992b465eb52840572a1
+Hashed UTC: 2026-10-17 16:59:55
+
+tzolkin_clock.html (u2 tzolkin: key without Gregorian dates, glyphs 20% larger again)
+Size: 1,518,669 bytes
+SHA-256: 62c3671406f1d7ea6df793a33d1436111806733be8452242420a3cfc971c0ae7
+Hashed UTC: 2026-10-17 17:05:33
+
+tzolkin_clock.html (u2 tzolkin: key Haab glyphs 20% larger)
+Size: 1,518,735 bytes
+SHA-256: 381b0dd4788a41c263d68aa75ae5beab166e7d0c8b21f4d0908fb142fd78eccf
+Hashed UTC: 2026-10-17 17:08:31
+
+tzolkin_clock.html (u2 tzolkin: key Haab glyphs one width, darkened)
+Size: 1,518,951 bytes
+SHA-256: 004ec20ebcd0cce4c182c907d7f8de8e949b619c8d4b805303240bc05d40523d
+Hashed UTC: 2026-10-17 17:12:22
+
+tzolkin_clock.html (u2 tzolkin: key bars and dots left of glyphs; Haab glyphs 20% larger, sharpened and darkened)
+Size: 1,519,877 bytes
+SHA-256: 844033d8be1c1cb68b8c02c437f58b1a32dedde3e80c1fb99deba6860484361e
+Hashed UTC: 2026-10-17 17:22:03
+
+tzolkin_clock.html (u2 tzolkin: key with Gregorian dates under the left box; Haab over Tzolkin glyph stacks under each player's column)
+Size: 1,520,334 bytes
+SHA-256: c4d48d58451d47bf402dc1ec552d536d23f554c3ea32640cc0695bdb19fd9ea7
+Hashed UTC: 2026-10-17 17:36:14
+
+tzolkin_clock.html (u2 tzolkin: glyph stacks under the board without player symbols, moved up, equally spaced)
+Size: 1,520,261 bytes
+SHA-256: 5cfe34c7ccbcc4c7bcd81425e6d10e211c0c622797a098e315ab481496021245
+Hashed UTC: 2026-10-17 17:40:09
+
+tzolkin_clock.html (u2 tzolkin: today's glyph column added under the board, framed green)
+Size: 1,520,540 bytes
+SHA-256: 9e6287888a797e63a3fad58b213939f0d48062fc1d722383ee02bf8d312140e7
+Hashed UTC: 2026-10-17 17:56:26
+
+tzolkin_clock.html (u2 tzolkin: symbols under the glyph columns, small green square for today)
+Size: 1,520,716 bytes
+SHA-256: d7bc79fdb2757c7706f60a36aef6d5da07e243d0ed5bcb62a42aaa4ccaa39a39
+Hashed UTC: 2026-10-17 18:02:26
+
+tzolkin_clock.html (u2 tzolkin: glyph columns packed left with coloured lines)
+Size: 1,520,895 bytes
+SHA-256: 2b066bf48ecf8c077f1d1d235f7dd37794ee6d8bb5a66ec0c93f259fc5fc0805
+Hashed UTC: 2026-10-17 18:07:46
+
+tzolkin_clock.html (u2 tzolkin: you-are-here button under the left key; black box round the glyph columns)
+Size: 1,521,115 bytes
+SHA-256: 4937cce6b293f994adf1ee23578f05e5c473a6f2f89ed0c4d3585bfa41aa147a
+Hashed UTC: 2026-10-17 18:10:50
+
+tzolkin_clock.html (u2 tzolkin: glyph columns in date order; coloured lines meet the box)
+Size: 1,521,186 bytes
+SHA-256: e2deaa51962db27a515476f75e534c4203b816d39be3ca5c473f01f37aa72323
+Hashed UTC: 2026-10-17 18:13:58
+
+tzolkin_clock.html (u2 tzolkin: glyph box flush with the board's left edge)
+Size: 1,521,244 bytes
+SHA-256: 5763089a1ead30b314ac05e58eaabcc45e9572d45878c2c8e2bad57a7ed90ef4
+Hashed UTC: 2026-10-17 18:16:11
+
+tzolkin_clock.html (u2 tzolkin: right box contents 10 px up)
+Size: 1,521,277 bytes
+SHA-256: 20524c6a4a8ab1b2d1440201d03fe6b411a91a278ee043f29f19b347f00e8766
+Hashed UTC: 2026-10-17 18:18:40
+
+tzolkin_clock.html (u2 tzolkin: New Fire (52 x 365) glyph column added)
+Size: 1,521,541 bytes
+SHA-256: 85f8265427f0d2a47dec3014fa7242e9a1a671b028942919fa8d57594ec1fbe5
+Hashed UTC: 2026-10-17 18:21:50
+
+tzolkin_clock.html (u2 tzolkin: you-are-here button square green only)
+Size: 1,521,511 bytes
+SHA-256: 16eb59df3de4e7f6c4f91645ca0af0c3df69b3d046388c6bd036255aff0c0522
+Hashed UTC: 2026-10-17 18:24:49
+
+tzolkin_clock.html (u2 tzolkin board: Moon conjunctions with Mercury, Venus, Mars as grey-filled symbols)
+Size: 1,522,321 bytes
+SHA-256: 736b35b52980d9f808e28bcf966516ac5530025b8960c96968f6363c6a4fd311
+Hashed UTC: 2026-10-17 18:26:34
+
+tzolkin_clock.html (u2 tzolkin board: small today square, full size on a shared day; New Fire mark a square)
+Size: 1,522,625 bytes
+SHA-256: 9e8be972b441e8828dc4b4a090b296e5d901ac8bdaeeac3c4f37e7aac5fce2b7
+Hashed UTC: 2026-10-17 18:33:15
+
+tzolkin_clock.html (u2 tzolkin: today's glyph-column square green only)
+Size: 1,522,585 bytes
+SHA-256: 0e09f3b2ea1c3996dcbb28d7cdcf14700672c179ee3539eb3495abd9d08d9055
+Hashed UTC: 2026-10-17 18:34:42
+
+tzolkin_clock.html (u2 tzolkin: glyph box 5 px above the frame bottom)
+Size: 1,522,672 bytes
+SHA-256: dbe0389197bf216c7a07bd0d749edd8b1d7b133eb85816b42422affd1d2987dc
+Hashed UTC: 2026-10-17 18:37:49
+
+tzolkin_clock.html (u2 tzolkin: Start of New Calendar moved into the left key with a brown square and Gregorian date)
+Size: 1,522,974 bytes
+SHA-256: 052b883501ef8fd852632ea194139ac7ccf0e1fe0311e00eb0e78aaef9debd17
+Hashed UTC: 2026-10-17 18:42:50
+
+tzolkin_clock.html (u2 tzolkin: you-are-here button shows the Gregorian date only)
+Size: 1,522,973 bytes
+SHA-256: 8cf25f026653454670f19205c3aa8f17c3084d9bb99346a56af26f43a1cc8946
+Hashed UTC: 2026-10-17 18:44:33
+
+tzolkin_clock.html (u2 tzolkin: You are here as a plain key line with today's date)
+Size: 1,523,192 bytes
+SHA-256: 401f36b2f71301d85a6a3c2da48bb7b673c408eb809e0e8d09628c8b13623584
+Hashed UTC: 2026-10-17 18:46:42
+
+tzolkin_clock.html (u2 tzolkin: 'Mars forward motion')
+Size: 1,523,199 bytes
+SHA-256: 0e77de6ba172798d899068a83c67ffe16c7c55e8f8660eadeaeaa4a3c3dd3e67
+Hashed UTC: 2026-10-17 18:48:18
+
+tzolkin_clock.html (u2 tzolkin: Moon-conjunction symbols lined grey inside instead of filled)
+Size: 1,523,298 bytes
+SHA-256: 01b3ffdcee3eb5f5eb967190ad65ae147c56abc2f2c2ac0ee4bffedccd7ab409
+Hashed UTC: 2026-10-17 18:50:54
+
+tzolkin_clock.html (u2 tzolkin board: New Fire square dotted when not in this tzolkin)
+Size: 1,523,435 bytes
+SHA-256: 6ebd579161b34ad8a2970cf76ea2a6de16a5acedda769c05aa60865003f3c389
+Hashed UTC: 2026-10-17 18:56:12
+
+tzolkin_clock.html (u2 tzolkin: key above the text field in date order)
+Size: 1,523,281 bytes
+SHA-256: 70e96dacfda0fbeb02fcc7ac3d0b20ed765ddee92977b9a9abc92516da6c6220
+Hashed UTC: 2026-10-17 19:00:30
+
+tzolkin_clock.html (u2 tzolkin: glyph columns and symbols centred in their cells)
+Size: 1,523,347 bytes
+SHA-256: 4496d5e58c31cee071ef95c8931377fbabfab5b85310fc62bac5476eb40b54f6
+Hashed UTC: 2026-10-17 19:02:51
+
+tzolkin_clock.html (u2 tzolkin: column symbols centred under the day glyphs)
+Size: 1,523,395 bytes
+SHA-256: 5ae636d195fff64df4412e31dde8b736e585c6de7125d5e8c732a4321558e736
+Hashed UTC: 2026-10-17 19:04:57
+
+tzolkin_clock.html (u2 tzolkin board: Haab glyphs stretched 20% horizontally)
+Size: 1,523,457 bytes
+SHA-256: 79e9d8f871a09ccc4d18f73ffef26c48212da411729e5a1d141c1bcac224a726
+Hashed UTC: 2026-10-17 19:09:11
+
+tzolkin_clock.html (u2 tzolkin: bars and dots lined up in the glyph columns)
+Size: 1,523,751 bytes
+SHA-256: f8a01733d725e8c85ffdce8140c8f5d33bbf0e69e7630a18ea731de15d3af37c
+Hashed UTC: 2026-10-17 19:12:01
+
+tzolkin_clock.html (u2 tzolkin: day glyphs centred under the Haab glyphs, numbers kept in line)
+Size: 1,524,026 bytes
+SHA-256: c77f1de6d84088442ece8e5c11f978e9fa10f3bc2afaf7e150d10ffee10bfe1a
+Hashed UTC: 2026-10-17 19:15:47
+
+tzolkin_clock.html (u2 tzolkin: left box frame 10 px outside the notches, flush left)
+Size: 1,524,088 bytes
+SHA-256: 679f3cd30bad0f6204e6835d70c66ae585741c202fc6e36ac16ed3d15855baf7
+Hashed UTC: 2026-10-17 19:20:39
+
+tzolkin_clock.html (u2 tzolkin: right box 10 px from the left box and the display's right side)
+Size: 1,524,283 bytes
+SHA-256: 00d8c6977c47a96ac340bba3cfbfecf7c3a0de02f91b386bac44320721325c75
+Hashed UTC: 2026-10-17 19:23:02
+
+tzolkin_clock.html (u2 tzolkin: day glyphs under the board 10% larger)
+Size: 1,524,363 bytes
+SHA-256: eec4f6c75fb48480e9bbd9b1c2b8a5cf04a1d3eaed33400b3022231bc46dbdc3
+Hashed UTC: 2026-10-17 19:25:23
+
+tzolkin_clock.html (u2 tzolkin: right box contents 10 px from the left bar's inner edge)
+Size: 1,524,543 bytes
+SHA-256: c3da6decd515013e4a4139cd342b4f470ed32d777784046c3e23b2155424c7f2
+Hashed UTC: 2026-10-17 19:31:16
+
+tzolkin_clock.html (u2 tzolkin: column of 13 constellations from u1 at the right end of the box)
+Size: 1,525,165 bytes
+SHA-256: 23d1dd5e6f83895ef3679fef81075854be06446821a1a1a2988858e548addf8a
+Hashed UTC: 2026-10-17 19:36:40
+
+tzolkin_clock.html (u2 tzolkin: constellation column shrunk to the box height, 10 px right of the board)
+Size: 1,525,223 bytes
+SHA-256: 1dd1c87b5b9f5bc0facb636d7c281a333184a1d0817b634c98a41cac60a6b253
+Hashed UTC: 2026-10-17 19:39:25
+
+tzolkin_clock.html (u2 tzolkin: constellation column 30% smaller, no side lines)
+Size: 1,525,289 bytes
+SHA-256: 652db7e1e9e6cfef51a8b4369dab772fe769bef15c42c5e90aae05284fc2d260
+Hashed UTC: 2026-10-17 19:42:32
+
+tzolkin_clock.html (u2 tzolkin: one constellation beside each board row, stepping a row at a time)
+Size: 1,525,381 bytes
+SHA-256: 3831c2bd05516f27cf55beb3ae4e8e963514b8d6188609c432172152e0595178
+Hashed UTC: 2026-10-17 19:45:06
+
+tzolkin_clock.html (u2 tzolkin: constellations 10 px from the box's right side, bar-and-dot 1-13 beside them)
+Size: 1,525,874 bytes
+SHA-256: 4514b1a8deb813b1a5e9dd16c14c4a1cd711a2b3b1ebc5b009e22c836fffdcb6
+Hashed UTC: 2026-10-17 19:48:31
+
+tzolkin_clock.html (u2 tzolkin: black box round the constellation column)
+Size: 1,526,065 bytes
+SHA-256: 49bc69335abcc4841c682f3f05b1ec5c2d18a4d397b786ba7bd8b9e12a7cc3d9
+Hashed UTC: 2026-10-17 19:52:50
+
+tzolkin_clock.html (u1 tzolkin: today's Haab month glyph stretched and darkened, today's day number in bars and dots on its left)
+Size: 1,526,880 bytes
+SHA-256: dc8f450cc833786cb80591a953cf739c24cb81ded4b1ad6fe158c229d233e2e5
+Hashed UTC: 2026-10-17 20:42:52
+
+tzolkin_clock.html (u1 tzolkin: Haab glyphs under the board stretched to one width)
+Size: 1,527,010 bytes
+SHA-256: 65d361e34d073184fa1e82b12e34b839d9b5ba7d2db5622b4f360efc8672d15f
+Hashed UTC: 2026-10-17 20:46:07
+
+tzolkin_clock.html (menu: right/left arrows open/close in the tier shown; tiers change only by the tabs)
+Size: 1,527,050 bytes
+SHA-256: 613286906a09ddad56e083f7a40453ab12821c220f05cd245483f5e9de554018
+Hashed UTC: 2026-10-17 21:11:24
+
+tzolkin_clock.html (menu: tier tabs stay up inside every folder of an Underworld)
+Size: 1,527,305 bytes
+SHA-256: 040ea7d8f00296d77f46cdc67bf7532e7f66cd1e7ed2e3ed38c0ef2cf0fee87e
+Hashed UTC: 2026-10-17 21:15:59

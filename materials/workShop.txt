@@ -1,0 +1,105 @@
+# Workshop log: cycles, calendars and the sky
+
+A running record of the discussion, so anyone joining can see what has been tested, what holds, and what is open. Terms follow the user's usage: **era** = 1,508 years; **age** = 2,160 years; **epoch** = 9,360,000 d / 5 = 1,872,000 d (13 baktun). The user's relations are being sorted into the clock's nine Underworlds (U1–U9), so each can be tested within its own scale.
+
+## The story so far (Oct 15–16, 2026)
+The workshop began with the stars and worked inward to the calendars.
+
+**The galaxy.** Starting from the Pleiades, we placed the cluster in the Orion Arm and traced it, the Sun, the Hyades and the Ursa Major core back 20, 120 and 360 million years. With the trip around the galaxy taken out, each object moves in two rhythms: an in-and-out loop of about 171 million years and an up-and-down bounce through the mid-plane of about 91 million years. Because these rhythms do not match, every orbit traces a rosette that never closes, and the rosettes turn at different rates. A model of the whole galaxy built from such rosettes shows how spiral arms arise as places where orbits crowd together, with the Lindblad resonances marking where the arms start and stop. Stars do not interact one-on-one, but they do in multiples: the multiple-star table (Castor, Alpha Centauri, Algol, Mizar, TIC 290061484) shows nested orbits with periods from hours to half a million years, each level far longer than the one inside it.
+
+**Sirius and precession.** The user's chart of Sirius's rising year at Memphis (5000 BC – AD 3000) shows an arc. Closed into a full circle it takes about 25,800 years, one turn of precession, with two gaps of about 3,500 years when Sirius never rises at Memphis. We looked at the claim that the Sun orbits Sirius (Sri Yukteswar, Cruttenden): Sirius is 8.6 light years away and moving too fast to be bound, and precession is measured against quasars, which do not show the shift such an orbit would cause. Over human time spans, single stars move in nearly straight lines; their curved galactic orbits only show over millions of years, and companions add their own short loops.
+
+**Testing number relations.** The user brought many relations between cycles. We agreed to test each against chance, using measured values or the user's stated working values, and to note the reference frame. The test page now scores about 36. The strongest are Maya: the Mars cycle is almost exactly 3 tzolkin, and 3 eclipse years almost exactly 4 tzolkin. Jupiter ≈ 25 eclipse seasons, 8 × 584 days ≈ 171 sidereal months, and the 819-day planetary fits (Linden & Bricker 2023) are also far tighter than chance. Several others turned out to be within chance or exact only by construction, such as the 25,920-year precession equation, which reduces to the 243-year Venus transit cycle. The user added an important rule: the codex corrects its counts in steps of 4, 6 or 8 days, so a near miss of that size can still be a good find (example: 68,908 days = 9.5 Jupiter–Saturn conjunctions = 260 × 265 + 8 = 118 × 584 − 4 ≈ 7,000⅓ ÷ 3 lunar months).
+
+**Working values.** To stop the numbers shifting, the user fixed a working set: Venus 583.9069 days (from 243 years = 152 Venus cycles), Jupiter 4,332.5315 days, Saturn 10,758.833 days, giving a Jupiter–Saturn conjunction of 7,253.4697 days. 583.9069 is correct for the transit cycle treated as exact; the measured mean Venus cycle is 583.9214 days, because 243 years is about 1¼ days off 152 real cycles. The Full Moon comes out of the conjunction equation when the month and the year are in the same frame (sidereal with sidereal, or tropical with tropical).
+
+**The Sun Stone.** A sharp photograph (Anagoria, CC BY 3.0) was unrolled ring by ring. The eight triangular points are evenly spaced at 45°, so they do not lay out the 121.5- and 105.5-year transit gaps by spacing. The U-row holds about 69 U's, plus about 18 on raised blocks, so more than one count is possible, perhaps intentionally. The user's earlier 160 or 320 count was a miscount.
+
+**Ages.** Ages are an even human division of the circle; the question is where to anchor it. Taking the Sun's constellation at the spring equinox (or the opposite one on the midnight meridian), the user's working anchor is a Taurus–Aries boundary around 2200 BC, the time of the 4.2-kiloyear climate event and the fall of Ur. That puts the start of Aquarius about AD 2097–2121. The Babylonian royal-star anchor (Aldebaran and Antares, nearly opposite), Lahiri, the IAU borders and a 13-sign scheme with Ophiuchus give dates from about AD 970 to 2600 and remain to be explored. Sitchin's account of a dispute over that boundary was traced to his books; the original texts (Lament for Ur, Enūma Eliš, MUL.APIN) are listed in the reading list for comparison.
+
+## Ground rules we settled on
+- Test every relation against chance. Whole-number fits get easier as the multipliers grow. The test page `time/u4/u4_data/cycle_relations_tested.html` (clock menu: U4 > Documents) scores about 36 relations.
+- Codex corrections (user): a fit off by a multiple of 4, 6 or 8 days is listed with its correction as a possible codex correction, not scored as a plain miss.
+- Use the working values or the measured values, and say which. Measured: tropical year 365.24219, synodic month 29.530589, Venus 583.9214, Jupiter sidereal 4,332.59, eclipse season 173.310038.
+- Combine two cycles by subtracting rates (1/P1 − 1/P2). This form holds in any unit. Products of periods ("days × days") only work in one unit.
+- Note the reference frame (stars, equinox, or a drifting frame), and from where a position is seen (Earth or Sun). For example, Venus seen in Scorpius from Earth may be in Taurus seen from the Sun.
+- The user's observation: the sky turns on one dial, so day counts and year counts can share instrumental numbers (1° ≈ 1 day of the year ≈ 4 minutes of the day).
+
+## Working values (the user's set, Oct 16)
+These are the values the workshop uses for its own reckoning. Each is internally consistent; measured modern values are kept alongside for testing against the sky.
+| Body | Working value | How it is defined | Measured mean |
+|---|---|---|---|
+| Venus (synodic) | 583.9069 d | 243 × 365.2422 / 152, from the Venus transit cycle | 583.9214 d |
+| Jupiter (orbit) | 4,332.5315 d | from the 10 Tzec records, 2587 BC – AD 688 | 4,332.59 d (sidereal) |
+| Saturn (orbit) | 10,758.833 d | chosen so the Jupiter–Saturn conjunction is 7,253.4697 d | 10,759.22 d (sidereal) |
+| Jupiter–Saturn conjunction | 7,253.4697 d | 1 / (1/4,332.5315 − 1/10,758.833) (checked: 7,253.4696) | about 7,253.45 d |
+| Moon (tropical month) | 27.321582 d | matches the 365.2422-day year in the conjunction equation | — |
+| Eclipse season | 173.3085 d (from 34 J–S ÷ 1,423) | about 2 minutes short of the measured value | 173.310038 d |
+
+## Results by Underworld
+**Long counts (epochs, katuns, Jupiter–Saturn)**
+- 68,908 d = 9.5 J–S = 260 × 265 + 8 = 118 × 584 − 4; also 3 × 68,908 = 206,724 d ≈ 7,000⅓ lunar months (0.03 d off), about 1 in 150 by chance.
+- 27 J–S = 195,843.68 d = 491 Jupiter synods = 518 Saturn synods (each about 0.3 d off) ≈ 1,130 eclipse seasons (3.3 d off).
+- 108 J–S (4 × 27) = 783,374.7 d ≈ 3,013 tzolkin (5.3 d short); the eclipse-season fit drifts to 14–20 d, so the tzolkin is the better lock at this length.
+- 135 J–S (5 × 27) = 979,218.4 d ≈ 2,681 tropical years (4.1 d) ≈ 1,677 Venus cycles (6.5 d with 583.9069; 17.8 d with the measured value). Spreadsheet: `time/u4/u4_data/conjunction_cycles.xlsx`.
+- 34 J–S = 1,423 eclipse seasons is exact by construction (it defines 173.3085); against the measured season it is 2.2 d off, within chance but within codex correction range.
+- 27 katuns ≈ 6,583 lunar months ≈ 532¼ years (3–4 hours each).
+
+**The 19-year Underworld (katun minus tzolkin)**
+- 7,200 − 260 = 6,940 d ≈ 19 years ≈ 235 lunar months (the Metonic cycle), used for Moon and year prognostication.
+- 19 × 9 = 171 years (62,456.4 d) ≈ 539 = 77 × 7 Mercury cycles (62,458.0 d), 1.6 d apart; 9 × 6,940 = 62,460 d, 2 d from the Mercury count. About 1 in 37 for a span chosen in advance; the 9 (Lords of the Night) makes it a natural Maya span.
+
+**The Calendar Round (52 × 365 days) and 1 Reed**
+- 1519, the year Cortés landed, was a 1 Reed (Ce Acatl) year, the year-name of Topiltzin Quetzalcoatl's birth and departure. 1 Reed years recur every 52 years: … 843, 895, 947, 999, 1051, 1103, 1155, 1207, 1259, 1311, 1363, 1415, 1467, 1519, 1571 …
+- The story that the Aztecs took Cortés for the returning Quetzalcoatl appears in sources written decades after the conquest (Sahagún's Florentine Codex, Book 12, c. 1570s); Cortés's own letters (1520) report Moctezuma speaking of returning ancestors but do not name Quetzalcoatl. Historians (Gillespie 1989; Townsend 2003; Restall 2018) argue the link was built after the fact. The user's question: was it an error, or did the statement carry calendar meaning?
+- Venus (mean cycle, ±several days): at the Veracruz landing, 22 April 1519 (Julian), Venus was about 331 days past inferior conjunction, just after superior conjunction, so about to emerge as the evening star. At the entry into Tenochtitlan, 8 November 1519, it was the bright evening star, about 53 days before inferior conjunction. Quetzalcoatl's Venus aspect is the morning star.
+- 1 Reed table (Oct 16, `time/u4/u4_data/one_reed_years_sky.xlsx`, 791–1623, PyEphem): 52 years hold about 32.5 Venus cycles, so Venus alternates between 1 Reed years. Morning-star 1 Reed years come every 104 years (the Venus Round): 791, 947 … 1259, 1363, 1467, 1571, the first rising about 30 days earlier each time (7 Apr 1467, 7 Mar 1571). 1519 is an evening-star year (superior conjunction about 19 Mar, evening star about 26 Apr). A morning-star return fits 1467 or 1571 better. 1415 had a Jupiter–Saturn great conjunction (three passes).
+
+## Strongest fits found so far
+| Relation | Off by | Comment |
+|---|---|---|
+| Mars synodic period ≈ 3 tzolkin (780 d) | 0.06 d | Maya Mars table; also 1+2+…+39 = 780 |
+| 3 eclipse years ≈ 4 tzolkin | 0.14 d | why the tzolkin serves eclipse warnings |
+| Jupiter ≈ 25 eclipse seasons (12.5 eclipse years) | 0.16–0.22 d | user's 4,332.5315 or sidereal 4,332.59; no known mechanism |
+| 8 × 584 d ≈ 171 sidereal months | about 6 minutes | ties the Moon to the codex's 584-day count |
+| 6 × 819 d ≈ 13 Saturn cycles; 20 × 819 d ≈ 21 Mars cycles | about 1.2 d | Linden & Bricker (2023) |
+| 8 years ≈ 5 Venus cycles ≈ 13 Venus orbits | 1–2 d | the real Earth–Venus near-resonance |
+| 27 katuns ≈ 6,583 lunar months ≈ 532¼ years | 3–4 hours | 108 katuns = 777,600 d ≈ 2,129 years, back in the same season |
+
+## Ages: anchoring decision (Oct 16)
+- Working choice (user): count ages from a Taurus–Aries boundary about 2200 BC. With the 2,160-year age, Aquarius begins about AD 2121; with the measured 2,148-year age, about AD 2097. Provisional: to be checked by looking at the state of Pisces now.
+- Kept for deep dives: the Babylonian royal-star anchor (Aldebaran at 15° Taurus, Antares at 15° Scorpius, nearly opposite in longitude; Aquarius about AD 2375); Lahiri (Spica at 0° Libra; about AD 2440); IAU constellation borders (about AD 2597); 13 equal signs with Ophiuchus (age about 1,982 years; the date depends heavily on the anchor placement, AD 971 to 2582).
+- Ages are an even human division of the circle; the question is where to anchor it. Define them by the Sun's constellation at the spring equinox (dawn), or equivalently the opposite constellation on the midnight meridian.
+- Side note: the song "Aquarius" (*Hair*, 1967) names no datable sky event; the Moon is in the seventh house for about two hours every day somewhere, and Jupiter meets Mars about every two years.
+
+## Corrected or set aside
+- 25,920 × 3 × 365.2422 = 583.9069 × 152 × 320 reduces to 243 years ≈ 152 Venus cycles. With the measured Venus period it is 2 days off, which is within chance. The 25,920 is along for the ride.
+- 1/(1/49.9 − 1/50.09) ≈ 13,155 years: 49.9 and 50.09 are two measurements of the same Sirius A–B orbit (best value now 50.128), not two cycles.
+- 35 Mercury cycles ≈ 11.1 years: the solar cycle varies from about 9 to 14 years, so the match is borderline chance.
+- 29.53059 × 27.2122 × 5 ≈ 11 years: a product of periods, true only in days.
+- 777,600 days does not contain a whole number of saros. 27 katuns = 29.52 saros, and the "29.52" is a count, not a month.
+- Neither of the user's Jupiter values follows the equinox (the tropical period is 4,330.60 d). 4,332.3913 implies a frame drifting about 5″ a year; 4,332.5315 about 1.4″ a year.
+- Sun Stone: an earlier count of 160 or 320 notches was a miscount (user). The eight triangular points are evenly spaced at 45° (±2.5°), so they do not lay out 121.5 / 105.5 years by spacing. The U-row holds about 69 U's (9–10 per open stretch), plus about 18 small U's on six raised blocks. See `stars/sunstone/u_band_unrolled_8_sectors.jpg`.
+- The Taurus–Aries "quarrel" around 2200 BC comes from Z. Sitchin (*When Time Began*, *The Wars of Gods and Men*); the twelve equal signs appear only in the 5th century BC and precession was recorded by Hipparchus about 130 BC, so a dispute at that date is an inference, not a recorded event.
+
+## Open questions (help wanted)
+1. **Sun Stone counts.** Verify the U count stretch by stretch; decide what counts as a "stacked pair"; check other rings the same way (`stars/sunstone/unwrap2.py` unrolls any ring).
+2. **Venus transits and the Aztec stone.** Find the older article linking the 243-year transit cycle (121.5 / 105.5 / 8) to the stone. Is any Mesoamerican record of a transit known?
+3. **The 2200 BC age boundary.** Compare Sitchin's reading of the Lament for Ur with the ETCSL translation; check MUL.APIN for how the Bull and the Hired Man (Aries) were placed.
+4. **Reference frames.** Which frame do the Tzec records and New Fire values imply, and could a slow drift (about 1.4–5″ a year) match something physical, such as the motion of the local star stream?
+5. **Exact saros route.** The user's longer derivation still has to be written out step by step.
+6. **27-katun "wheel".** Find the source; the classic katun wheel is 13 katuns (about 256 years).
+7. **Age boundaries.** Deep dives on the royal-star, Lahiri, IAU and 13-sign anchors; test the 2200 BC anchor against the state of Pisces now; add an age dial to the clock.
+8. **Heliocentric view.** Add the constellation seen from the Sun beside each geocentric position in the clock, for codex dates.
+9. **1 Reed and Quetzalcoatl.** For each 1 Reed year, compute Venus phase, eclipses and other sky events, to look for better candidates than 1519 for a "return" date; compare the sources (Florentine Codex, Cortés's letters, Annals of Cuauhtitlan).
+10. **99-year weather lore.** Find the source; candidates are 99 lunar months = 8 years, the 19-year Metonic cycle, and the Gleissberg solar cycle.
+
+## Work produced (in the clock and the project)
+- U6 > Hipparcos data: the Pleiades: Orion Arm map and cross-section; side views; velocities; 120- and 360-million-year paths; rosettes over a billion years; galaxy model with Lindblad resonances.
+- U6 > Multiple stars: periods and distances of triples and higher, plus nearby pairs.
+- U4 > Within 50 light years: Sirius's rising year over a whole precession cycle.
+- U4 > Documents: Cycle relations, tested against chance.
+- `time/u4/u4_data/conjunction_cycles.xlsx`: 27 and 135 J–S conjunctions against years, Venus and eclipse seasons (formulas; change the inputs to test other spans).
+- `stars/sunstone/`: Sun Stone photo and the unrolled U band.
+
+See also `claude/workshop-reading-list.md` and `claude/codex-status.md`.

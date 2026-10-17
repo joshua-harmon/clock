@@ -294,3 +294,15 @@ body {
     pointer-events: none;
 }
 .toast.show { opacity: 1; }
+
+/* --- fit the blue frames to their boxes (Oct 17, 2026) ---
+   every frame is its boxes' width plus 5 px of blue on each side, and each flyout starts
+   at the edge of its parent's frame, level with the box that opened it */
+#bookmarks { width: 172px; }                         /* 162 px boxes + 2 x 5 px */
+#bookmarks ul.subs { width: 182px; }                 /* 172 px boxes + 2 x 5 px */
+#bookmarks ul.sites { width: 250px; }                /* 240 px boxes + 2 x 5 px */
+#bookmarks > li:hover > ul.subs,
+#bookmarks > li.open > ul.subs { left: 167px; top: -5px; }
+#bookmarks ul.subs > li:hover > ul.sites,
+#bookmarks ul.subs > li.open > ul.sites { left: 177px; top: -5px; }
+#bookmarks li { background-color: transparent; }   /* the invisible hover bridge beside each box no longer shows as a white strip */

@@ -1,0 +1,137 @@
+# Menu entries removed on 2026-10-17
+
+Uncited pictures, and timeline entries without a picture, were taken off the menu. The pictures are kept in materials/uncited_pictures/ (same folder names as before); the full entries are in removed_menu_entries.json, so any of them can be put back once it has a citation or a picture.
+
+- U1  The Sun and 7 day count > Data sets > Daily solar magnetic flux, sunspots > Solar magnetic field (picture)  (its picture is not cited)
+- U1  The Sun and 7 day count > Timeline > Pictures without a date > kinich  (its picture is not cited)
+- U1  The Sun and 7 day count > Timeline > Pictures without a date > Bolontiku1  (its picture is not cited)
+- U1  The Sun and 7 day count > Timeline > Pictures without a date > Earth2  (its picture is not cited)
+- U1  The Sun and 7 day count > Timeline > Pictures without a date  (folder left empty)
+- U2  Inner Planets > Apps & documents > Scale: Mercury < Mars < Venus < Earth (picture)  (its picture is not cited)
+- U2  Inner Planets > Timeline > Feb 2013  Satellite picture shared online (screenshot 1)  (its picture is not cited)
+- U2  Inner Planets > Timeline > Feb 2013  Satellite picture shared online (screenshot 2)  (its picture is not cited)
+- U2  Inner Planets > Timeline > Feb 2013  Satellite picture shared online (screenshot 3)  (its picture is not cited)
+- U2  Inner Planets > Timeline > Pictures without a date > Glyphs (test11)  (its picture is not cited)
+- U3  Outer Planets > Apps & documents > Scale: Earth < Neptune < Uranus < Saturn < Jupiter (picture)  (its picture is not cited)
+- U3  Outer Planets > Timeline > 1939  20,000 TV sets in New York City  (timeline entry with no picture; restored Oct 17 with a cited Wikimedia picture)
+- U3  Outer Planets > Timeline > 1939  World War II  (timeline entry with no picture; restored Oct 17 with a cited Wikimedia picture)
+- U4  Sirius Supercluster > Data sets > Glyph data (to be deciphered) > Egyptian stele (date not known)  (its picture is not cited)
+- U4  Sirius Supercluster > Data sets > The Nile > GrphMthlyNile  (its picture is not cited)
+- U4  Sirius Supercluster > Data sets > The Nile > GrphNile2  (its picture is not cited)
+- U4  Sirius Supercluster > Data sets > The Nile > GrphNileFloods  (its picture is not cited)
+- U4  Sirius Supercluster > Data sets > The Nile > untitled4  (its picture is not cited)
+- U4  Sirius Supercluster > Apps & documents > Book pages: Joseph and the 12th Dynasty > Book page 1  (its picture is not cited)
+- U4  Sirius Supercluster > Apps & documents > Book pages: Joseph and the 12th Dynasty > Book page 2  (its picture is not cited)
+- U4  Sirius Supercluster > Apps & documents > Book pages: Joseph and the 12th Dynasty > Book page 3  (its picture is not cited)
+- U4  Sirius Supercluster > Apps & documents > Book pages: Joseph and the 12th Dynasty  (folder left empty)
+- U4  Sirius Supercluster > Apps & documents > Scale: Jupiter < Wolf 359 < Sun < Sirius (picture)  (its picture is not cited)
+- U4  Sirius Supercluster > Timeline > 3113 BC  Last Sun of the Maya calendar  (timeline entry with no picture; restored Oct 17 with a cited Wikimedia picture)
+- U4  Sirius Supercluster > Timeline > 3100 BC  Egypt united under King Menes  (timeline entry with no picture; restored Oct 17 with a cited Wikimedia picture)
+- U4  Sirius Supercluster > Timeline > Domesticated dogs  (timeline entry with no picture; restored Oct 17 with a cited Wikimedia picture)
+- U4  Sirius Supercluster > Timeline > 2670 BC  Step pyramid of Djoser, Saqqara  (its picture is not cited)
+- U4  Sirius Supercluster > Timeline > China Sage Kings  (timeline entry with no picture; restored Oct 17 with a cited Wikimedia picture)
+- U4  Sirius Supercluster > Timeline > Indus of Northern India  (timeline entry with no picture; restored Oct 17 with a cited Wikimedia picture)
+- U4  Sirius Supercluster > Timeline > 2381 BC  Use of papyrus as paper in Egypt  (timeline entry with no picture; restored Oct 17 with a cited Wikimedia picture)
+- U4  Sirius Supercluster > Timeline > Age of the Ram, 2200 BC  (timeline entry with no picture; restored Oct 17 with a cited Wikimedia picture)
+- U4  Sirius Supercluster > Timeline > c. 1446 BC  Moses and the Exodus (traditional date)  (its picture is not cited)
+- U4  Sirius Supercluster > Timeline > c. 1200 BC  Olmec colossal heads  (its picture is not cited)
+- U4  Sirius Supercluster > Timeline > Chinese literature  (timeline entry with no picture; restored Oct 17 with a cited Wikimedia picture)
+- U4  Sirius Supercluster > Timeline > 917 BC  Celts of Western Europe  (timeline entry with no picture; restored Oct 17 with a cited Wikimedia picture)
+- U4  Sirius Supercluster > Timeline > c. 750 BC  Homer writes the Iliad, the Odyssey  (timeline entry with no picture; restored Oct 17 with a cited Wikimedia picture)
+- U4  Sirius Supercluster > Timeline > Recent Mt. Somma eruption  (timeline entry with no picture; restored Oct 17 with a cited Wikimedia picture)
+- U4  Sirius Supercluster > Timeline > Proto-Krakatoa eruption  (timeline entry with no picture; restored Oct 17 with a cited Wikimedia picture)
+- U4  Sirius Supercluster > Timeline > c. 1000  El Castillo, Chichen Itza  (its picture is not cited)
+- U4  Sirius Supercluster > Timeline > Pictures without a date > Venus (globe)  (its picture is not cited)
+- U4  Sirius Supercluster > Timeline > Pictures without a date  (folder left empty)
+- U5  Ursa Major Stream > Data sets > Glyph data (to be deciphered) > c. 2300 BC  Enki on the Adda seal (Akkadian cylinder seal, with inscription)  (its picture is not cited)
+- U5  Ursa Major Stream > Apps & documents > Scale: Sirius < Pollux < Arcturus < Aldebaran (picture)  (its picture is not cited)
+- U5  Ursa Major Stream > Timeline > 73k  (timeline entry with no picture; restored Oct 17 with a cited Wikimedia picture)
+- U5  Ursa Major Stream > Timeline > 14k  End of the Pleistocene  (timeline entry with no picture; restored Oct 17 with a cited Wikimedia picture)
+- U5  Ursa Major Stream > Timeline > Monte Verde  (timeline entry with no picture; restored Oct 17 with a cited Wikimedia picture)
+- U5  Ursa Major Stream > Timeline > c. 2500 BC  Temple of Al Ubaid near Ur, Chaldea  (timeline entry with no picture; restored Oct 17 with a cited Wikimedia picture)
+- U5  Ursa Major Stream > Timeline > c. 2250 BC  City of Babylon  (timeline entry with no picture; restored Oct 17 with a cited Wikimedia picture)
+- U5  Ursa Major Stream > Timeline > c. 2000 BC  Abraham has left Ur  (timeline entry with no picture; restored Oct 17 with a cited Wikimedia picture)
+- U5  Ursa Major Stream > Timeline > Pictures without a date > Face (Mars)  (its picture is not cited)
+- U5  Ursa Major Stream > Timeline > Pictures without a date > Pyramid (Mars)  (its picture is not cited)
+- U5  Ursa Major Stream > Timeline > Pictures without a date > RCCEgraph  (its picture is not cited)
+- U5  Ursa Major Stream > Timeline > Pictures without a date > Alcyone (screenshot)  (its picture is not cited)
+- U5  Ursa Major Stream > Timeline > Pictures without a date  (folder left empty)
+- U6  Orion Arm > Apps & documents > Hipparcos data: the Pleiades > The Pleiades (photograph, UK Schmidt plates)  (its picture is not cited)
+- U6  Orion Arm > Apps & documents > Scale: Aldebaran < Rigel < Antares < Betelgeuse (picture)  (its picture is not cited)
+- U6  Orion Arm > Timeline > 350 kyrs  Homo Sapiens Sapiens  (timeline entry with no picture; restored Oct 17 with a cited Wikimedia picture)
+- U7  Galaxy > Apps & documents > Galactic core in Sagittarius > plasmaGalaxy  (its picture is not cited)
+- U7  Galaxy > Apps & documents > Galactic core in Sagittarius > galacticSkyPlot  (its picture is not cited)
+- U7  Galaxy > Apps & documents > Galactic core in Sagittarius > navajoBasket  (its picture is not cited)
+- U7  Galaxy > Apps & documents > Scale: Betelgeuse < Mu Cephei < VV Cephei A < VY Canis Majoris (picture)  (its picture is not cited)
+- U7  Galaxy > Timeline > Pictures without a date > The Milky Way (screenshot)  (its picture is not cited)
+- U7  Galaxy > Timeline > Pictures without a date > The Milky Way over the VLT (screenshot)  (its picture is not cited)
+- U7  Galaxy > Timeline > Pictures without a date > Orbits in the galaxy (book page)  (its picture is not cited)
+- U7  Galaxy > Timeline > Pictures without a date > Glyphs (test12)  (its picture is not cited)
+- U8  Local Group > Data sets > Charts of the Earth's history > Temperature since the Eemian (chart)  (its picture is not cited)
+- U8  Local Group > Apps & documents > Andromeda Galaxy in Virgo > The Andromeda Galaxy (screenshot)  (its picture is not cited)
+- U8  Local Group > Timeline > 586M  Worms, molluscs, crustaceans  (timeline entry with no picture; restored Oct 17 with a cited Wikimedia picture)
+- U8  Local Group > Timeline > 118M  Flowering plants, bees, grasses, primates  (timeline entry with no picture; restored Oct 17 with a cited Wikimedia picture)
+- U8  Local Group > Timeline > Pictures without a date > Prokaryote cell  (its picture is not cited)
+- U8  Local Group > Timeline > Pictures without a date  (folder left empty)
+- U9  Universe > Timeline > 14.0G  (timeline entry with no picture; restored Oct 17 with a cited Wikimedia picture)
+- U9  Universe > Timeline > 2.3G  Photosynthesis creates oxygen  (timeline entry with no picture; restored Oct 17 with a cited Wikimedia picture)
+- U9  Universe > Timeline > Organisms find ways to evolve  (timeline entry with no picture; restored Oct 17 with a cited Wikimedia picture)
+- U9  Universe > Timeline > Pictures without a date > The Local Group (screenshot)  (its picture is not cited)
+- U9  Universe > Timeline > Pictures without a date > The universe (screenshot)  (its picture is not cited)
+- Tools > List  - data input or output > Monthly Nile  (its picture is not cited)
+- Tools > List  - data input or output > The Galaxy  (its picture is not cited)
+- Data sets > Monthly Nile  (its picture is not cited)
+- Data sets > The Galaxy  (its picture is not cited)
+
+## Pictures moved to materials/uncited_pictures
+
+- time/u1/u1_data/gmf.png
+- time/u1/u1_time/Bolontiku1.png
+- time/u1/u1_time/Earth2.png
+- time/u1/u1_time/kinich.png
+- time/u2/u2_docs/u2.png
+- time/u2/u2_time/Workspace 1_047.png
+- time/u2/u2_time/Workspace 1_048.png
+- time/u2/u2_time/Workspace 1_049.png
+- time/u2/u2_time/test11.PNG
+- time/u3/u3_docs/u3.png
+- time/u4/u4_data/glyphs/Egypt.png
+- time/u4/u4_data/nile/GrphMthlyNile.png
+- time/u4/u4_data/nile/GrphNile2.png
+- time/u4/u4_data/nile/GrphNileFloods.png
+- time/u4/u4_data/nile/untitled4.png
+- time/u4/u4_docs/u4.png
+- time/u4/u4_docs/untitled1.png
+- time/u4/u4_docs/untitled2.png
+- time/u4/u4_docs/untitled3.png
+- time/u4/u4_time/Akhenaten.png
+- time/u4/u4_time/MayaPyramid.png
+- time/u4/u4_time/Moses.png
+- time/u4/u4_time/Nefertiti.png
+- time/u4/u4_time/Olmecs.png
+- time/u4/u4_time/Olmecs2.png
+- time/u4/u4_time/Saqqara.png
+- time/u4/u4_time/Thoth.png
+- time/u4/u4_time/Venus.png
+- time/u4/u4_time/iceAge.png
+- time/u5/U5_time/Alcyone.png
+- time/u5/U5_time/Face.png
+- time/u5/U5_time/RCCEgraph.png
+- time/u5/U5_time/marsPyramid.png
+- time/u5/u5_data/glyphs/Enki.png
+- time/u5/u5_docs/u5.png
+- time/u6/u6_docs/pleiades/pleiadesOld.png
+- time/u6/u6_docs/u6.png
+- time/u7/u7_docs/theGalaxy/galacticSkyPlot.png
+- time/u7/u7_docs/theGalaxy/navajoBasket.png
+- time/u7/u7_docs/theGalaxy/plasmaGalaxy.png
+- time/u7/u7_docs/u7.png
+- time/u7/u7_time/Workspace 1_006.png
+- time/u7/u7_time/Workspace 1_016.png
+- time/u7/u7_time/Workspace 1_017.png
+- time/u7/u7_time/test12.PNG
+- time/u8/U8_time/prokaryota.png
+- time/u8/u8_data/Holocene.png
+- time/u8/u8_docs/Workspace 1_007.png
+- time/u9/U9_time/Workspace 1_010.png
+- time/u9/U9_time/Workspace 1_012.png

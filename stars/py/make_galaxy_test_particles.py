@@ -1,6 +1,6 @@
 """The whole galaxy as a mix of many stars, each on its own rosette path.
 Test-particle model: flat rotation curve + rotating bar + rotating two-armed spiral, seen from above (north galactic pole; galaxy turns clockwise).
-Writes images/U6/galaxy_many_rosettes.png"""
+Writes time/u6/u6_docs/pleiades/galaxy_many_rosettes.png"""
 import math, os, sys, time
 import numpy as np
 import matplotlib; matplotlib.use('Agg')
@@ -119,4 +119,4 @@ fig.text(0.01, 0.005, 'Test-particle model run for 1 billion years: flat rotatio
          '(22 km/s/kpc, pitch 12°), seen from above with the galaxy turning clockwise.\nThe bar and spiral strengths are set by hand, so this shows how arms arise, not the Milky Way’s exact arms. '
          'Real pictures of the arms also owe much to gas, dust and young bright stars, which are not in this model. Faint dashed circle = the Sun’s distance from the centre (26,600 ly).\nResonance radii assume a flat rotation curve (230 km/s). Measured bar speeds range from about 35 to 55 km/s/kpc, which moves the bar’s outer resonance from beyond the Sun to just inside it.',
          color='#9aa', fontsize=9.5)
-fig.savefig(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'images', 'U6', 'galaxy_many_rosettes.png'), facecolor=BG, bbox_inches='tight'); print('saved')
+fig.savefig(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'time', 'u6', 'u6_docs', 'pleiades', 'galaxy_many_rosettes.png'), facecolor=BG, bbox_inches='tight'); print('saved')

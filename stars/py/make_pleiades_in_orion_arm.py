@@ -7,7 +7,7 @@ import numpy as np
 import matplotlib; matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.patches import Circle, Rectangle
-here = os.path.dirname(os.path.abspath(__file__)); out = os.path.join(here, '..', '..', 'images', 'U6')
+here = os.path.dirname(os.path.abspath(__file__)); out = os.path.join(here, '..', '..', 'time', 'u6', 'u6_docs', 'pleiades')
 KPC = 3261.56; R0 = 8.15
 ARMS = {'Sagittarius–Carina Arm': (24, 6.04, 17.1, 1.0, 0.27, '#8fb4ff'),
         'Local (Orion) Arm':      (9, 8.26, 11.4, 11.4, 0.31, '#ffd36e'),

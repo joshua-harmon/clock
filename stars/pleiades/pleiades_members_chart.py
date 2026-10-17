@@ -1,4 +1,4 @@
-# Draws images/U6/pleiades_members_gaia.png from the Lodieu et al. 2019 Gaia DR2 Pleiades table (run in this folder; needs numpy and matplotlib).
+# Draws time/u6/u6_docs/pleiades/pleiades_members_gaia.png from the Lodieu et al. 2019 Gaia DR2 Pleiades table (run in this folder; needs numpy and matplotlib).
 import numpy as np, matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt

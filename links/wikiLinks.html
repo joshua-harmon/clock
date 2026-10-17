@@ -311,5 +311,96 @@ File:Madame_curie_3334194920_e4014f35a4_o.jpg">Search results for &quot;madame c
   body.innerHTML=out.length?out.join(''):'<p>No links found.</p>';res.classList.add('open')});
 })();
 </script>
+<style>
+/* thumbnails beside the links: on when "thumbnails" is typed in the clock's text field (or in the search box here) */
+body.thumbs a.linkA{display:flex!important;align-items:center;gap:8px;min-height:52px}
+body.thumbs #bookmarks ul.sites{width:328px}
+body.thumbs #bookmarks ul.sites li a{width:318px}
+img.lth{flex:0 0 64px;width:64px;height:48px;object-fit:cover;border:1px solid #c8d0d8;border-radius:3px;background:#e8edf2}
+body:not(.thumbs) img.lth{display:none}
+</style>
+<script>
+(function(){
+ var KEY='tzThumbs';
+ function yt(u){var m=u.match(/(?:youtube\.com\/watch\?(?:.*&)?v=|youtu\.be\/|youtube\.com\/embed\/)([\w-]{11})/);return m&&m[1]}
+ function thumbFor(u){
+  if(!/^https?:/.test(u))return null;
+  var y=yt(u);if(y)return 'https://i.ytimg.com/vi/'+y+'/mqdefault.jpg';
+  var f=u.match(/commons\.wikimedia\.org\/wiki\/File:([^?#]+)/);if(f)return 'https://commons.wikimedia.org/wiki/Special:FilePath/'+f[1]+'?width=128';
+  if(/\.(png|jpe?g|gif|webp|svg)(\?|$)/i.test(u))return u;
+  return 'https://s.wordpress.com/mshots/v1/'+encodeURIComponent(u)+'?w=160&h=120';
+ }
+ function decorate(root){
+  var as=(root||document).querySelectorAll('a.linkA');
+  for(var i=0;i<as.length;i++){var a=as[i];if(a.querySelector('img.lth'))continue;var t=thumbFor(a.getAttribute('href')||'');if(!t)continue;
+   var im=document.createElement('img');im.className='lth';im.loading='lazy';im.alt='';im.src=t;im.onerror=function(){this.style.visibility='hidden'};a.insertBefore(im,a.firstChild)}
+ }
+ function set(on){document.body.classList.toggle('thumbs',on);if(on)decorate();
+  // links between the links pages carry the setting along
+  var as=document.querySelectorAll('a[href]');for(var i=0;i<as.length;i++){var h=as[i].getAttribute('href');if(!/^(index|wikiLinks)\.html/.test(h)&&!/^\.\.\/tzolkin_clock\.html/.test(h))continue;
+   var m=h.match(/^([^#?]*)(\?[^#]*)?(#.*)?$/),q=(m[2]||'').replace(/[?&]thumbs=\d/,'').replace(/^&/,'?');as[i].setAttribute('href',m[1]+(on&&!/tzolkin/.test(m[1])?(q?q+'&':'?')+'thumbs=1':q)+(m[3]||''))}}
+ var on=false;try{on=localStorage.getItem(KEY)=='1'}catch(e){}
+ var qm=location.search.match(/[?&]thumbs=(\d)/);if(qm){on=qm[1]=='1';try{localStorage.setItem(KEY,on?'1':'0')}catch(e){}}
+ set(on);
+ addEventListener('storage',function(e){if(e.key==KEY)set(e.newValue=='1')});
+ // links added later (search results) get pictures too
+ new MutationObserver(function(){if(document.body.classList.contains('thumbs'))decorate()}).observe(document.body,{childList:true,subtree:true});
+ var sb=document.getElementById('searchBox');
+ if(sb)sb.addEventListener('keydown',function(e){if(e.key=='Enter'&&/^\s*thumb(nail)?s?\s*$/i.test(sb.value)){e.preventDefault();e.stopImmediatePropagation();
+  var v=!document.body.classList.contains('thumbs');try{localStorage.setItem(KEY,v?'1':'0')}catch(x){}set(v);sb.value='';
+  try{history.replaceState(null,'',location.pathname+(v?'?thumbs=1':'')+location.hash)}catch(x){}}},true);
+})();
+</script>
+<style>
+/* delete buttons "X": shown with the thumbnails; a deleted link is hidden at once and taken out of this file with "save the page" */
+.ldel{display:none}
+body.thumbs #bookmarks ul.sites > li{position:relative}
+body.thumbs #bookmarks ul.sites > li > a.linkA{padding-right:36px}
+body.thumbs .ldel{display:block;position:absolute;right:7px;top:50%;margin-top:-11px;width:22px;height:22px;padding:0;border:1px solid #c33;border-radius:3px;background:#fff;color:#c00;font:bold 12px/20px Arial,sans-serif;cursor:pointer;z-index:2}
+body.thumbs .ldel:hover{background:#c00;color:#fff}
+#ldelbar{position:fixed;right:16px;bottom:16px;z-index:3000;background:#fffbe6;border:1px solid #e0a000;border-radius:5px;padding:9px 12px;font:13px/1.45 Arial,sans-serif;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.2);display:none;max-width:470px}
+#ldelbar button{margin:6px 6px 0 0;font:bold 12px Arial,sans-serif;padding:4px 10px;cursor:pointer;border:1px solid #9ab;border-radius:3px;background:#f4f9ff;color:#1f3fbf}
+#ldelbar button.go{background:#2a6cc0;color:#fff;border-color:#2a6cc0}
+</style>
+<script>
+(function(){
+ var PAGE=decodeURIComponent(location.pathname.split('/').pop()||'index.html'),DK='tzDel:'+PAGE,DEL=[];
+ try{DEL=JSON.parse(localStorage.getItem(DK)||'[]')}catch(e){}
+ function store(){try{localStorage.setItem(DK,JSON.stringify(DEL))}catch(e){}}
+ function txt(a){var s='';for(var n=a.firstChild;n;n=n.nextSibling)if(n.nodeType==3||(n.nodeType==1&&n.tagName!='IMG'))s+=n.textContent;return s.trim()}
+ function key(a){return (a.getAttribute('href')||'')+'\u0001'+txt(a)}
+ function siteLinks(){return document.querySelectorAll('#bookmarks ul.sites > li > a.linkA')}
+ function hideDeleted(){var ks={};DEL.forEach(function(d){ks[d.k]=1});var as=siteLinks();for(var i=0;i<as.length;i++)if(ks[key(as[i])])as[i].parentNode.style.display='none'}
+ function addX(){if(!document.body.classList.contains('thumbs'))return;var as=siteLinks();
+  for(var i=0;i<as.length;i++){var li=as[i].parentNode;if(li.querySelector('.ldel'))continue;var b=document.createElement('button');b.type='button';b.className='ldel';b.textContent='X';b.title='delete this link';li.appendChild(b)}}
+ var bar=document.createElement('div');bar.id='ldelbar';document.body.appendChild(bar);
+ function showBar(msg){if(!DEL.length&&!msg){bar.style.display='none';return}
+  bar.innerHTML=(msg?'<div>'+msg+'</div>':'')+(DEL.length?'<div><b>'+DEL.length+'</b> link'+(DEL.length>1?'s':'')+' deleted from this page (hidden in this browser until the page is saved).</div><button type="button" data-a="undo">undo the last</button><button type="button" class="go" data-a="save">save the page …</button>':'<button type="button" data-a="close">close</button>');
+  bar.style.display='block'}
+ bar.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var a=b.getAttribute('data-a');
+  if(a=='close'){bar.style.display='none';return}
+  if(a=='undo'){var d=DEL.pop();store();var as=siteLinks();for(var i=0;i<as.length;i++)if(key(as[i])==d.k){as[i].parentNode.style.display=''}showBar();return}
+  if(a=='save')save()});
+ document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('.ldel');if(!b)return;e.preventDefault();e.stopPropagation();
+  var li=b.parentNode,a=li.querySelector('a.linkA');DEL.push({k:key(a),t:txt(a)});store();li.style.display='none';showBar()},true);
+ // the saved page: the chosen file with the deleted <li> lines taken out, everything else exactly as it was
+ function dec(s){var t=document.createElement('textarea');t.innerHTML=s;return t.value}
+ function strip(html){var want={};DEL.forEach(function(d){want[d.k]=(want[d.k]||0)+1});var n=0;
+  var out=html.replace(/[ \t]*<li>\s*<a class="linkA"[^>]*?href="([^"]*)"[^>]*>([\s\S]*?)<\/a>\s*<\/li>[ \t]*\r?\n?/g,function(m,h,inner){var k=dec(h)+'\u0001'+dec(inner.replace(/<[^>]*>/g,'')).trim();if(want[k]){want[k]--;n++;return ''}return m});
+  return {html:out,n:n}}
+ function finish(r,how){var left=DEL.length-r.n;DEL=[];store();showBar('<b>'+r.n+'</b> link'+(r.n==1?'':'s')+' taken out of '+PAGE+' ('+how+').'+(left>0?' '+left+' were not found in the file (already gone).':'')+' Publish with git add -A, git commit, git push.')}
+ function pickFile(){return new Promise(function(res){var i=document.createElement('input');i.type='file';i.accept='.html';i.onchange=function(){var f=i.files[0];if(!f)return res(null);f.text().then(function(t){res({name:f.name,text:t})})};i.click()})}
+ async function save(){if(!DEL.length)return;var handle=null,file=null;
+  if(window.showOpenFilePicker){try{var hs=await showOpenFilePicker({types:[{description:'the links page',accept:{'text/html':['.html']}}]});handle=hs[0];var f=await handle.getFile();file={name:f.name,text:await f.text()}}catch(e){if(e&&e.name=='AbortError')return;handle=null}}
+  if(!file)file=await pickFile();if(!file)return;
+  if(file.name!=PAGE){showBar('That file is '+file.name+'; please choose <b>'+PAGE+'</b> in the links folder.');return}
+  var r=strip(file.text);
+  if(handle&&handle.createWritable){try{var w=await handle.createWritable();await w.write(r.html);await w.close();finish(r,'saved');return}catch(e){}}
+  var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([r.html],{type:'text/html'}));a.download=PAGE;document.body.appendChild(a);a.click();a.remove();
+  finish(r,'downloaded: put it in the links folder in place of the old one')}
+ hideDeleted();addX();showBar();
+ new MutationObserver(function(){addX()}).observe(document.body,{attributes:true,attributeFilter:['class']});
+})();
+</script>
 </body>
 </html>

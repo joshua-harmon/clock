@@ -1,13 +1,13 @@
 # The Pleiades zoomed in on the named stars, seen three ways (from Earth, from the north galactic pole, edge-on).
 # Same layout as make_pleiades_views.py, but zoomed so that only the named stars matter; text stays the same size.
-# Members: Lodieu et al. 2019 (A&A 628, A66), Gaia DR2, members within the tidal radius (stars/pleiades/pleiades_lodieu2019_gaiadr2.tsv).
+# Members: Lodieu et al. 2019 (A&A 628, A66), Gaia DR2, members within the tidal radius (time/u6/u6_docs/pleiades/pleiades_lodieu2019_gaiadr2.tsv).
 # The named stars are too bright for reliable Gaia DR2 parallaxes, so they are placed at the cluster's median distance.
 import math, os, statistics
 import numpy as np
 import matplotlib; matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 here = os.path.dirname(os.path.abspath(__file__))
-tsv = os.path.join(here, '..', 'pleiades', 'pleiades_lodieu2019_gaiadr2.tsv'); out = os.path.join(here, '..', '..', 'images', 'U6')
+tsv = os.path.join(here, '..', '..', 'time', 'u6', 'u6_docs', 'pleiades', 'pleiades_lodieu2019_gaiadr2.tsv'); out = os.path.join(here, '..', '..', 'time', 'u6', 'u6_docs', 'pleiades')
 T = np.array([[-0.0548755604, -0.8734370902, -0.4838350155], [0.4941094279, -0.4448296300, 0.7469822445], [-0.8676661490, -0.1980763734, 0.4559837762]])
 NAMED = [('Alcyone', 56.871, 24.105, 2.87), ('Atlas', 57.290, 24.053, 3.62), ('Electra', 56.219, 24.113, 3.70), ('Maia', 56.457, 24.368, 3.87),
          ('Merope', 56.582, 23.948, 4.17), ('Taygeta', 56.302, 24.467, 4.29), ('Pleione', 57.297, 24.137, 5.05), ('Celaeno', 56.201, 24.289, 5.45),
